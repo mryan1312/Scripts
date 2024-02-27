@@ -60,6 +60,16 @@ do
             echo "$element"
         fi
     done
+    #Cleaning up old shortcuts, in case there are group changes
+    sudo rm $dir"Desktop/Build Scans.command"
+    sudo rm $dir"Desktop/Sales Scans.command"
+    sudo rm $dir"Desktop/Purchasing Scans.command"
+    sudo rm $dir"Desktop/Marketing Scans.command"
+    sudo rm $dir"Desktop/Leadership Scans.command"
+    sudo rm $dir"Desktop/IT Scans.command"
+    sudo rm $dir"Desktop/HR Scans.command"
+    sudo rm $dir"Desktop/Architecture Scans.command"
+    sudo rm $dir"Desktop/Accounting Scans.command"
     #Checking each variable, creating a shortcut to open that scan folder on the user desktop.
     if [ $Build_Access == 1 ]; then
         sudo touch $dir"Desktop/Build Scans.command"
