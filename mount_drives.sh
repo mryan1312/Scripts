@@ -34,15 +34,15 @@ echo 'directory="$HOME/Desktop/"' | sudo tee -a $scriptfile
 echo "# Check AD group membership" | sudo tee -a $scriptfile
 echo 'groupMembership="$(id -Gn $user)"' | sudo tee -a $scriptfile
 echo "# Check for specific group memberships and mount shares accordingly" | sudo tee -a $scriptfile
-echo 'rm $dir"Desktop/Build Scans.command"' | sudo tee -a $scriptfile
-echo 'rm $dir"Desktop/Sales Scans.command"' | sudo tee -a $scriptfile
-echo 'rm $dir"Desktop/Purchasing Scans.command"' | sudo tee -a $scriptfile
-echo 'rm $dir"Desktop/Marketing Scans.command"' | sudo tee -a $scriptfile
-echo 'rm $dir"Desktop/Leadership Scans.command"' | sudo tee -a $scriptfile
-echo 'rm $dir"Desktop/IT Scans.command"' | sudo tee -a $scriptfile
-echo 'rm $dir"Desktop/HR Scans.command"' | sudo tee -a $scriptfile
-echo 'rm $dir"Desktop/Architecture Scans.command"' | sudo tee -a $scriptfile
-echo 'rm $dir"Desktop/Accounting Scans.command"' | sudo tee -a $scriptfile
+echo 'rm $directory"Build Scans.command"' | sudo tee -a $scriptfile
+echo 'rm $directory"Sales Scans.command"' | sudo tee -a $scriptfile
+echo 'rm $directory"Purchasing Scans.command"' | sudo tee -a $scriptfile
+echo 'rm $directory"Marketing Scans.command"' | sudo tee -a $scriptfile
+echo 'rm $directory"Leadership Scans.command"' | sudo tee -a $scriptfile
+echo 'rm $directory"IT Scans.command"' | sudo tee -a $scriptfile
+echo 'rm $directory"HR Scans.command"' | sudo tee -a $scriptfile
+echo 'rm $directory"Architecture Scans.command"' | sudo tee -a $scriptfile
+echo 'rm $directory"Accounting Scans.command"' | sudo tee -a $scriptfile
 echo 'if [[ $groupMembership == *"SMH_MO-JAS_Build_Access"* ]]; then' | sudo tee -a $scriptfile
 echo '    touch $directory"Build Scans.command"' | tee -a $scriptfile
 echo '    chmod +x $directory"Build Scans.command"' | tee -a $scriptfile
