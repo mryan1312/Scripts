@@ -27,19 +27,22 @@ cat > $plistfile << 'EOF'
 </plist>
 EOF
 
-#Writing the script to shared folder
 scriptfile=/Users/Shared/map_drives.sh
 sudo touch $scriptfile
 sudo chmod +x $scriptfile
 sudo chmod 777 $scriptfile
+# Writing the script to shared folder
 sudo cat > $scriptfile << 'EOF'
 #!/bin/bash
+
 # Get the current user's username and set desktop directory
 user=$(whoami)
 directory="$HOME/Desktop/"
+
 # Check AD group membership
 groupMembership="$(id -Gn $user)"
-# Check for specific group memberships and mount shares accordingly
+
+# Remove old shortcuts, in case there are changes
 rm $directory"Build Scans.command"
 rm $directory"Sales Scans.command"
 rm $directory"Purchasing Scans.command"
@@ -49,6 +52,8 @@ rm $directory"IT Scans.command"
 rm $directory"HR Scans.command"
 rm $directory"Architecture Scans.command"
 rm $directory"Accounting Scans.command"
+
+# Check for specific group memberships and create shortcuts on desktop to open in finder
 if [[ $groupMembership == *"SMH_MO-JAS_Build_Access"* ]]; then
     touch $directory"Build Scans.command"
     chmod +x $directory"Build Scans.command"
