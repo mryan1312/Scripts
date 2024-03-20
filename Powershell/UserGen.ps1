@@ -49,19 +49,55 @@ Function Show-UserCreate {
         }
     }
 
-    function Set-User($FirstName, $LastName, $Username, $Password) {
-        #$UserCheck = Get-ADUser -identity $Username
-        Start-Transcript
-        Write-Host "Creating user for "$FirstName  $LastName 
-        Write-Host "as" $Username $Password
+    function Set-User($FirstName, $LastName, $Username, $Password, $Company, $Office, $Department, $EmailAddress, $Title, $Manager, $PhoneNumber) {
+        $UserCheck = Get-ADUser -identity $Username
         # Proceed to run AD Creation
-        Stop-Transcript
-        #if ($UserCheck -eq "") {
+        if ($UserCheck -eq "") {
+            Start-Transcript
+            Write-Host "Creating user for "$FirstName  $LastName 
+            Write-Host "as" $Username $Password
+            Stop-Transcript
+            # Get Manager OU
+            $ManagerDN = Get-ADUser -Filter { displayName -like $Manager } | Select-Object -ExpandProperty DistinguishedName
+            # Create User
+            $secpasswd = ConvertTo-SecureString -String $Password -AsPlainText -Force
+            New-ADUser -Name $FirstName+" "+$LastName -DisplayName $FirstName+" "+$LastName -SamAccountName $Username 
+            -GivenName $FirstName -Surname $LastName  -AccountPassword($secpasswd) -Enabled $true 
+            -Company $Company -Office $Office -Department $Department 
+            -EmailAddress $EmailAddress  -Title $Title 
+            -manager $ManagerDN 
+            -OfficePhone $PhoneNumber  -UserPrincipalName $EmailAddress
+            
+            #OU Move
+            $UserDN = Get-ADUser -Filter { displayName -like $FirstName+" "+$LastName } | Select-Object -ExpandProperty DistinguishedName
+            if ( $Company -eq "Schuber Mitchell Homes" ) {
+                Move-ADObject -Identity $UserDN -TargetPath "OU=Employees,OU=Joplin,DC=schubermitchell,DC=com"
+            }
+            if ( $Company -eq "Land Development Group" ) {
+                Move-ADObject -Identity $UserDN -TargetPath "OU=Employees,OU=Land Group LLC,DC=schubermitchell,DC=com"
+            }
+### Need to add Group Selection and iterate through, adding access###
 
-        #}
-        #else {
-            # popup message "User already exists"
-        #}
+            #Sync changes to Cloud            
+            Start-ADSyncSyncCycle -PolicyType Initial
+        }
+        else {
+            [System.Windows.Forms.MessageBox]::Show('User already exists in AD. No action taken.','WARNING')
+        }
+    }
+    function Set-AzureUser($Email, $PhoneNumber) {
+        Connect-AzureAD 
+        Connect-ExchangeOnline 
+        $azureuseremail = $Email
+        $azureuserid = (Get-AzureADuser -objectid $azureuseremail ).objectid
+
+###SMH/LDG Groups-Need to have group selection sent to a hash table and iterate through. Mind DistributionGroupMember vs UnifiedGroupLinks###
+
+        #MFA
+        Install-module Microsoft.Graph.Identity.Signins
+        Install-Module Microsoft.Graph.Beta -AllowClobber
+        Connect-MgGraph -Scopes "User.Read.all","UserAuthenticationMethod.Read.All","UserAuthenticationMethod.ReadWrite.All"
+        New-MgUserAuthenticationPhoneMethod -UserId $azureuserid -phoneType "mobile" -phoneNumber "+"+$PhoneNumber
     }
 
     # Creating main form
@@ -227,7 +263,7 @@ Function Show-UserCreate {
     $ILButton.Add_Click({Format-Email("IL")})
     $FLButton.Add_Click({Format-Email("FL")})
     $ClearButton.Add_Click({Clear-Form})
-    $ExecuteButton.Add_Click({Set-User($FirstNameBox.Text, $LastNameBox.Text, $UsernameBox.Text, $PasswordBox.Text)})
+    $ExecuteButton.Add_Click({Set-User($FirstNameBox.Text, $LastNameBox.Text, $UsernameBox.Text, $PasswordBox.Text, $CompanyBox.Text, $OfficeBox.Text, $DepartmentBox.Text, $EmailBox.Text, $TitleBox.Text, $ManagerBox.Text, $PhoneBox.Text)})
 
     # Display Form
     [void]$UserCreateForm.ShowDialog()
