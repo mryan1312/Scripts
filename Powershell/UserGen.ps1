@@ -4,6 +4,7 @@ Add-Type -AssemblyName System.Drawing
 
 Function Show-UserCreate {
     function Get-Phrase {
+        # Generates a psuedo-random password that should be somewhat easy to remember.
         $LetComp = @('Alpha','Beta','Gamma','Delta','Epsilon','Zeta','Eta','Theta','Iota','Kappa','Lambda','Mu','Nu','Xi','Omicron','Pi','Rho','Sigma','Tau','Upsilon','Phi','Chi','Psi','Omega')
         $AdjComp = @('Alert','Fuzzy','Spicy','Prickly','Calm','Bored','Clever','Bad','Drab','Dull','Dizzy','Busy','Brave','Jolly','Nice','Witty','Tame','Zany','Rich','Super','Shy','Proud','Itchy')
         $AniComp = @('Chicken','Quokka','Kangaroo','Bear','Cow','Cheetah','Lion','Panda','Owl','Snake','Eagle','Elephant','Newt','Shark','Spider','Squid','Crab','Scorpion','Barnacle','Penguin','Toad')
@@ -28,9 +29,12 @@ Function Show-UserCreate {
         $OfficeBox.Text = ""
         $DepartmentBox.Text = ""
         $ManagerBox.Text = ""
+        $GroupIndicatorLabel.Text = ""
+        $Script:GroupMembership = @{}
     }
 
     function Format-Email($AddressFormat) {
+        # Formats the email address according to the chosen style and populates the box
         if ($AddressFormat -eq "FL") {
             if ($EDomainBox.Text -eq "") {
                 $EmailBox.Text = $FirstNameBox.Text.ToLower() + "." + $LastNameBox.Text.ToLower() + "@" + $LDomainBox.Text.ToLower()
@@ -49,15 +53,199 @@ Function Show-UserCreate {
         }
     }
 
-    function Set-User($FirstName, $LastName, $Username, $Password, $Company, $Office, $Department, $EmailAddress, $Title, $Manager, $PhoneNumber) {
+    function Get-Groups {
+        # Create a window to allow selecting all groups for the user, return them to a hashtable for further processing
+        $LocalGroups = @()
+        $DistroGroups = @()
+        $UnifiedLinks = @()
+
+        $GroupSelectForm = New-Object System.Windows.Forms.Form
+        $GroupSelectForm.clientSize = '420,180'
+        $GroupSelectForm.text = "Select Applicable Groups"
+        $GroupSelectForm.BackColor = "#ffffff"
+        $GroupSelectForm.FormBorderStyle = 'FixedDialog'
+
+        $LocalGroupsLabel = New-Object System.Windows.Forms.Label
+        $LocalGroupsLabel.Text = "Local AD"
+        $LocalGroupsLabel.Location = New-Object System.Drawing.Point (10,10)
+        $LocalGroupsBox = New-Object System.Windows.Forms.Listbox
+        $LocalGroupsBox.Location = New-Object System.Drawing.Point (10,40)
+        $LocalGroupsBox.SelectionMode = 'Multiextended'
+        $DistroGroupsLabel = New-Object System.Windows.Forms.Label
+        $DistroGroupsLabel.Text = "Distro Groups"
+        $DistroGroupsLabel.Location = New-Object System.Drawing.Point (150,10)
+        $DistroGroupsBox = New-Object System.Windows.Forms.Listbox
+        $DistroGroupsBox.Location = New-Object System.Drawing.Point (150,40)
+        $DistroGroupsBox.SelectionMode = 'Multiextended'
+        $UnifiedLinksLabel = New-Object System.Windows.Forms.Label
+        $UnifiedLinksLabel.Text = "Unified Links"
+        $UnifiedLinksLabel.Location = New-Object System.Drawing.Point (290,10)
+        $UnifiedLinksBox = New-Object System.Windows.Forms.Listbox
+        $UnifiedLinksBox.Location = New-Object System.Drawing.Point (290,40)
+        $UnifiedLinksBox.SelectionMode = 'Multiextended'
+        $SelectButton = New-Object System.Windows.Forms.Button
+        $SelectButton.Text = "Select"
+        $SelectButton.Location = New-Object System.Drawing.Point (170,150)
+
+        # Local AD Group Items
+        $LocalGroupsBox.Items.Add("_GreenTree_QB_Access")
+        $LocalGroupsBox.Items.Add("_Secure_Wireless_Computers")
+        $LocalGroupsBox.Items.Add("_SSLVPNUsers")
+        $LocalGroupsBox.Items.Add("AccountingTeam_Access")
+        $LocalGroupsBox.Items.Add("ArchitectureTeam_Access")
+        $LocalGroupsBox.Items.Add("DesignTeam_Access")
+        $LocalGroupsBox.Items.Add("HRTeam_Access")
+        $LocalGroupsBox.Items.Add("IT_AllowedToCreateGroups_Access")
+        $LocalGroupsBox.Items.Add("IT_ServerMaintenance_Access")
+        $LocalGroupsBox.Items.Add("IT_SharePointAdministrators_Access")
+        $LocalGroupsBox.Items.Add("ITTeam_Access")
+        $LocalGroupsBox.Items.Add("LDG_Employees_Access")
+        $LocalGroupsBox.Items.Add("LDG_Finance_Access")
+        $LocalGroupsBox.Items.Add("LDG_GM_Access")
+        $LocalGroupsBox.Items.Add("LDG_Managers_Access")
+        $LocalGroupsBox.Items.Add("LDG_ProjectManagers_Access")
+        $LocalGroupsBox.Items.Add("LDGTeam_Access")
+        $LocalGroupsBox.Items.Add("LeadershipTeam_Access")
+        $LocalGroupsBox.Items.Add("LEADTeam_Access")
+        $LocalGroupsBox.Items.Add("Marketing_NewHomeAdvisor_Access")
+        $LocalGroupsBox.Items.Add("MarketingTeam_Access")
+        $LocalGroupsBox.Items.Add("PayrollTeam_Access")
+        $LocalGroupsBox.Items.Add("ProductionTeam_Access")
+        $LocalGroupsBox.Items.Add("PurchasingTeam_Access")
+        $LocalGroupsBox.Items.Add("SMH_AR-BEN_Build_Access")
+        $LocalGroupsBox.Items.Add("SMH_AR-BEN_Coordinator_Access")
+        $LocalGroupsBox.Items.Add("SMH_AR-BEN_Experience_Access")
+        $LocalGroupsBox.Items.Add("SMH_AR-BEN_GM_Access")
+        $LocalGroupsBox.Items.Add("SMH_AR-BEN_Ministry_Access")
+        $LocalGroupsBox.Items.Add("SMH_AR-BEN_Sales_Access")
+        $LocalGroupsBox.Items.Add("SMH_AR-BEN_Service_Access")
+        $LocalGroupsBox.Items.Add("SMH_Employees_Access")
+        $LocalGroupsBox.Items.Add("SMH_Featherston_Build_Access")
+        $LocalGroupsBox.Items.Add("SMH_Finance_Access")
+        $LocalGroupsBox.Items.Add("SMH_Gifting_Access")
+        $LocalGroupsBox.Items.Add("SMH_HO_Coordinator_Access")
+        $LocalGroupsBox.Items.Add("SMH_HO_Intern_Access")
+        $LocalGroupsBox.Items.Add("SMH_LocalAdmin_Workstations_Access")
+        $LocalGroupsBox.Items.Add("SMH_Managers_Access")
+        $LocalGroupsBox.Items.Add("SMH_MO-JAS_Build_Access")
+        $LocalGroupsBox.Items.Add("SMH_MO-JAS_Coordinator_Access")
+        $LocalGroupsBox.Items.Add("SMH_MO-JAS_Experience_Access")
+        $LocalGroupsBox.Items.Add("SMH_MO-JAS_GM_Access")
+        $LocalGroupsBox.Items.Add("SMH_MO-JAS_Ministry_Access")
+        $LocalGroupsBox.Items.Add("SMH_MO-JAS_Sales_Access")
+        $LocalGroupsBox.Items.Add("SMH_MO-JAS_Service_Access")
+        $LocalGroupsBox.Items.Add("SMH_Neighborhoods_Access")
+        $LocalGroupsBox.Items.Add("SMH_OK-TUL_Build_Access")
+        $LocalGroupsBox.Items.Add("SMH_OK-TUL_Coordinator_Access")
+        $LocalGroupsBox.Items.Add("SMH_OK-TUL_Experience_Access")
+        $LocalGroupsBox.Items.Add("SMH_OK-TUL_GM_Access")
+        $LocalGroupsBox.Items.Add("SMH_OK-TUL_Ministry_Access")
+        $LocalGroupsBox.Items.Add("SMH_OK-TUL_Sales_Access")
+        $LocalGroupsBox.Items.Add("SMH_OK-TUL_Service_Access")
+        $LocalGroupsBox.Items.Add("SMH_ServiceManagers_Access")
+        $LocalGroupsBox.Items.Add("SystemsTeam_Access")
+
+        # Distro Group Items
+        $DistroGroupsBox.Items.Add("LDG AR-BEN Ministry")
+        $DistroGroupsBox.Items.Add("LDG HO Ministry")
+        $DistroGroupsBox.Items.Add("LDG Managers")
+        $DistroGroupsBox.Items.Add("LDG MO-JAS Ministry")
+        $DistroGroupsBox.Items.Add("Leads and Information")
+        $DistroGroupsBox.Items.Add("Shared Services")
+        $DistroGroupsBox.Items.Add("SMH AR-BEN Closing")
+        $DistroGroupsBox.Items.Add("SMH AR-BEN Construction Managers")
+        $DistroGroupsBox.Items.Add("SMH AR-BEN Contract Signed")
+        $DistroGroupsBox.Items.Add("SMH AR-BEN Listings")
+        $DistroGroupsBox.Items.Add("SMH AR-BEN Ministry")
+        $DistroGroupsBox.Items.Add("SMH AR-BEN Region")
+        $DistroGroupsBox.Items.Add("SMH AR-BEN Sales")
+        $DistroGroupsBox.Items.Add("SMH AR-BEN Service")
+        $DistroGroupsBox.Items.Add("SMH AR-BEN Settlements")
+        $DistroGroupsBox.Items.Add("SMH AR-BEN Unsold")
+        $DistroGroupsBox.Items.Add("SMH Build Region 002")
+        $DistroGroupsBox.Items.Add("SMH Build Region 004")
+        $DistroGroupsBox.Items.Add("SMH Drivers")
+        $DistroGroupsBox.Items.Add("SMH Featherston Build")
+        $DistroGroupsBox.Items.Add("SMH HO Ministry")
+        $DistroGroupsBox.Items.Add("SMH Managers")
+        $DistroGroupsBox.Items.Add("SMH MO-JAS Build")
+        $DistroGroupsBox.Items.Add("SMH MO-JAS Construction Managers")
+        $DistroGroupsBox.Items.Add("SMH MO-JAS Contract Signed")
+        $DistroGroupsBox.Items.Add("SMH MO-JAS Ministry")
+        $DistroGroupsBox.Items.Add("SMH MO-JAS Region")
+        $DistroGroupsBox.Items.Add("SMH MO-JAS Sales")
+        $DistroGroupsBox.Items.Add("SMH MO-JAS Service")
+        $DistroGroupsBox.Items.Add("SMH MO-JAS Settlements")
+        $DistroGroupsBox.Items.Add("SMH MO-JAS Unsold")
+        $DistroGroupsBox.Items.Add("SMH OK-TUL Build")
+        $DistroGroupsBox.Items.Add("SMH OK-TUL Closing")
+        $DistroGroupsBox.Items.Add("SMH OK-TUL Construction Managers")
+        $DistroGroupsBox.Items.Add("SMH OK-TUL Contract Signed")
+        $DistroGroupsBox.Items.Add("SMH OK-TUL Listings")
+        $DistroGroupsBox.Items.Add("SMH OK-TUL Ministry")
+        $DistroGroupsBox.Items.Add("SMH OK-TUL Region")
+        $DistroGroupsBox.Items.Add("SMH OK-TUL Sales")
+        $DistroGroupsBox.Items.Add("SMH OK-TUL Service")
+        $DistroGroupsBox.Items.Add("SMH OK-TUL Settlements")
+        $DistroGroupsBox.Items.Add("SMH OK-TUL Unsold")
+
+
+        # Unified Link Items
+        $UnifiedLinksBox.Items.Add("Letsignit_Deploy")
+        $UnifiedLinksBox.Items.Add("Unified3")
+        $UnifiedLinksBox.Items.Add("Accounting Team")
+        $UnifiedLinksBox.Items.Add("BOD Team")
+        $UnifiedLinksBox.Items.Add("Daily plan")
+        $UnifiedLinksBox.Items.Add("Design Team")
+        $UnifiedLinksBox.Items.Add("Facilities Team")
+        $UnifiedLinksBox.Items.Add("Fleet Team")
+        $UnifiedLinksBox.Items.Add("Home Office")
+        $UnifiedLinksBox.Items.Add("HR Team")
+        $UnifiedLinksBox.Items.Add("IT Team")
+        $UnifiedLinksBox.Items.Add("LDG Team")
+        $UnifiedLinksBox.Items.Add("LEAD Team")
+        $UnifiedLinksBox.Items.Add("Leadership Team")
+        $UnifiedLinksBox.Items.Add("Managers Site Access")
+        $UnifiedLinksBox.Items.Add("Marketing Team")
+        $UnifiedLinksBox.Items.Add("Ministry Team")
+        $UnifiedLinksBox.Items.Add("Payroll Team")
+        $UnifiedLinksBox.Items.Add("Production Team")
+        $UnifiedLinksBox.Items.Add("Purchasing Team")
+        $UnifiedLinksBox.Items.Add("Safety Team")
+        $UnifiedLinksBox.Items.Add("SMH AR-BEN Team")
+        $UnifiedLinksBox.Items.Add("SMH Featherston Team")
+        $UnifiedLinksBox.Items.Add("SMH MO-JAS Build/Service/Detail")
+        $UnifiedLinksBox.Items.Add("SMH MO-JAS Closing")
+        $UnifiedLinksBox.Items.Add("SMH MO-JAS Team")
+        $UnifiedLinksBox.Items.Add("SMH OK-TUL Team")
+        $UnifiedLinksBox.Items.Add("SSPR")
+        $UnifiedLinksBox.Items.Add("Systems Team")
+
+        
+        $GroupSelectForm.Controls.Add($LocalGroupsBox)
+        $GroupSelectForm.Controls.Add($DistroGroupsBox)
+        $GroupSelectForm.Controls.Add($UnifiedLinksBox)
+        $GroupSelectForm.Controls.Add($SelectButton)
+        $GroupSelectForm.Controls.Add($LocalGroupsLabel)
+        $GroupSelectForm.Controls.Add($DistroGroupsLabel)
+        $GroupSelectForm.Controls.Add($UnifiedLinksLabel)
+
+        # Set select button output, send return value as Hash table of lists based on listbox selections
+        $SelectButton.DialogResult = [System.Windows.Forms.DialogResult]::OK
+        $FormResult = $GroupSelectForm.ShowDialog()
+        if ($FormResult -eq [System.Windows.Forms.DialogResult]::OK) {
+            $GroupIndicatorLabel.Text = "Group Memberships Set!"
+            return @{"LocalGroups"=@($LocalGroupsBox.SelectedItems); "DistroGroups"=@($DistroGroupsBox.SelectedItems); "UnifiedLinks"=@($UnifiedLinksBox.SelectedItems)}
+        }
+        
+    }
+
+    function Set-User($FirstName, $LastName, $Username, $Password, $Company, $Office, $Department, $EmailAddress, $Title, $Manager, $PhoneNumber, $GroupMembership) {
+        # Check if username already exists in AD
         $UserCheck = Get-ADUser -identity $Username
-        # Proceed to run AD Creation
+        # Proceed to run AD Creation if return value is empty
         if ($UserCheck -eq "") {
-            Start-Transcript
-            Write-Host "Creating user for "$FirstName  $LastName 
-            Write-Host "as" $Username $Password
-            Stop-Transcript
-            # Get Manager OU
+            # Get Manager DN
             $ManagerDN = Get-ADUser -Filter { displayName -like $Manager } | Select-Object -ExpandProperty DistinguishedName
             # Create User
             $secpasswd = ConvertTo-SecureString -String $Password -AsPlainText -Force
@@ -68,7 +256,9 @@ Function Show-UserCreate {
             -manager $ManagerDN 
             -OfficePhone $PhoneNumber  -UserPrincipalName $EmailAddress
             
-            #OU Move
+            $UserID = Get-ADUser $Username
+            
+            #OU Move based on company name
             $UserDN = Get-ADUser -Filter { displayName -like $FirstName+" "+$LastName } | Select-Object -ExpandProperty DistinguishedName
             if ( $Company -eq "Schuber Mitchell Homes" ) {
                 Move-ADObject -Identity $UserDN -TargetPath "OU=Employees,OU=Joplin,DC=schubermitchell,DC=com"
@@ -76,24 +266,40 @@ Function Show-UserCreate {
             if ( $Company -eq "Land Development Group" ) {
                 Move-ADObject -Identity $UserDN -TargetPath "OU=Employees,OU=Land Group LLC,DC=schubermitchell,DC=com"
             }
-### Need to add Group Selection and iterate through, adding access###
+            # Iterate through each item in list from the hashtable and add group membership
+            foreach ($GroupName in $GroupMembership["LocalGroups"]) {
+                Add-ADGroupMember -Identity $GroupName -Members $UserId
+            }
 
-            #Sync changes to Cloud            
+
+
+            # Sync changes to Cloud            
             Start-ADSyncSyncCycle -PolicyType Initial
+
+            # Verify user exists and send confirmation of successful operation
+            if ( Get-ADUser -identity $Username -neq "" ) {
+                [System.Windows.Forms.MessageBox]::Show('User was successfully added to domain.','Success')
+            }
         }
         else {
-            [System.Windows.Forms.MessageBox]::Show('User already exists in AD. No action taken.','WARNING')
+            # Username already exists in AD, need to check if user exists or username is not unique.
+            [System.Windows.Forms.MessageBox]::Show('Username already exists in AD. No action taken.','WARNING')
         }
-    }
-    function Set-AzureUser($Email, $PhoneNumber) {
+                # Connect to AzureAD and add groups
         Connect-AzureAD 
         Connect-ExchangeOnline 
-        $azureuseremail = $Email
-        $azureuserid = (Get-AzureADuser -objectid $azureuseremail ).objectid
+        $AzureUserEmail = $Email
+        $AzureUserID = (Get-AzureADuser -objectid $azureuseremail ).objectid
 
-###SMH/LDG Groups-Need to have group selection sent to a hash table and iterate through. Mind DistributionGroupMember vs UnifiedGroupLinks###
+        # Iterate through each item in list from the hashtable and add group membership
+        foreach ($DistroName in $GroupMembership["DistroGroups"]) {
+            Add-DistributionGroupMember -Identity $DistroName -Member $AzureUserID
+        }
+        foreach ($UnifiedName in $GroupMembership["UnifiedLinks"]) {
+            Add-UnifiedGroupLinks -Identity $UnifiedName -LinkType "Members" -Links $AzureUserEmail
+        }
 
-        #MFA
+        # MFA
         Install-module Microsoft.Graph.Identity.Signins
         Install-Module Microsoft.Graph.Beta -AllowClobber
         Connect-MgGraph -Scopes "User.Read.all","UserAuthenticationMethod.Read.All","UserAuthenticationMethod.ReadWrite.All"
@@ -129,6 +335,8 @@ Function Show-UserCreate {
     $CompanyLabel = New-Object System.Windows.Forms.Label
     $CompanyLabel.Text = "Company"
     $CompanyLabel.Location = New-Object System.Drawing.Point (10,286)
+    $GroupIndicatorLabel = New-Object System.Windows.Forms.Label
+    $GroupIndicatorLabel.Location = New-Object System.Drawing.Point (10,326)
 
     # Left-Hand Boxes
     $FirstNameBox = New-Object System.Windows.Forms.TextBox
@@ -160,7 +368,7 @@ Function Show-UserCreate {
     $CompanyBox.Font = 'Microsoft Sans Serif,10'
     $CompanyBox.Location = New-Object System.Drawing.Point (10,300)
 
-    #Right-Hand Labels
+    # Right-Hand Labels
     $LastNameLabel = New-Object System.Windows.Forms.Label
     $LastNameLabel.Text = "Last Name"
     $LastNameLabel.Location = New-Object System.Drawing.Point (200,6)
@@ -180,7 +388,7 @@ Function Show-UserCreate {
     $ManagerLabel.Text = "Manager"
     $ManagerLabel.Location = New-Object System.Drawing.Point (200,286)
 
-    #Right-Hand Boxes
+    # Right-Hand Boxes
     $LastNameBox = New-Object System.Windows.Forms.TextBox
     $LastNameBox.Size = '180,300'
     $LastNameBox.Font = 'Microsoft Sans Serif,10'
@@ -216,6 +424,9 @@ Function Show-UserCreate {
     $FLButton = New-Object System.Windows.Forms.Button
     $FLButton.Text = "First.Last"
     $FLButton.Location = New-Object System.Drawing.Point (400,140)
+    $GroupsButton = New-Object System.Windows.Forms.Button
+    $GroupsButton.Text = "Groups"
+    $GroupsButton.Location = New-Object System.Drawing.Point (400,220)
     $ExecuteButton = New-Object System.Windows.Forms.Button
     $ExecuteButton.Text = "Execute"
     $ExecuteButton.Location = New-Object System.Drawing.Point (300,360)
@@ -255,15 +466,18 @@ Function Show-UserCreate {
     $UserCreateForm.Controls.Add($ClearButton)
     $UserCreateForm.Controls.Add($ILButton)
     $UserCreateForm.Controls.Add($FLButton)
+    $UserCreateForm.Controls.Add($GroupsButton)
     $UserCreateForm.Controls.Add($LDomainBox)
     $UserCreateForm.Controls.Add($LDomainLabel)
     $UserCreateForm.Controls.Add($EDomainBox)
     $UserCreateForm.Controls.Add($EDomainLabel)
+    $UserCreateForm.Controls.Add($GroupIndicatorLabel)
     $GenerateButton.Add_Click({$PasswordBox.Text = Get-Phrase})
     $ILButton.Add_Click({Format-Email("IL")})
     $FLButton.Add_Click({Format-Email("FL")})
+    $GroupsButton.Add_Click({$Script:GroupMembership = Get-Groups})
     $ClearButton.Add_Click({Clear-Form})
-    $ExecuteButton.Add_Click({Set-User($FirstNameBox.Text, $LastNameBox.Text, $UsernameBox.Text, $PasswordBox.Text, $CompanyBox.Text, $OfficeBox.Text, $DepartmentBox.Text, $EmailBox.Text, $TitleBox.Text, $ManagerBox.Text, $PhoneBox.Text)})
+    $ExecuteButton.Add_Click({Set-User($FirstNameBox.Text, $LastNameBox.Text, $UsernameBox.Text, $PasswordBox.Text, $CompanyBox.Text, $OfficeBox.Text, $DepartmentBox.Text, $EmailBox.Text, $TitleBox.Text, $ManagerBox.Text, $PhoneBox.Text, $GroupMembership)})
 
     # Display Form
     [void]$UserCreateForm.ShowDialog()
