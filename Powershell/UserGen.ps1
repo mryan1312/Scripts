@@ -240,26 +240,26 @@ Function Show-UserCreate {
         
     }
 
-    function Set-User($FirstName, $LastName, $Username, $Password, $Company, $Office, $Department, $EmailAddress, $Title, $Manager, $PhoneNumber, $GroupMembership) {
+    function Set-User {
         # Check if username already exists in AD
-        $UserCheck = Get-ADUser -identity $Username
+        $UserCheck = Get-ADUser -identity $UsernameBox.Text
         # Proceed to run AD Creation if return value is empty
-        if ($UserCheck -eq "") {
+        if ( $null -eq $UserCheck) {
             # Get Manager DN
-            $ManagerDN = Get-ADUser -Filter { displayName -like $Manager } | Select-Object -ExpandProperty DistinguishedName
+            $ManagerDN = Get-ADUser -Filter { displayName -like $ManagerBox.Text } | Select-Object -ExpandProperty DistinguishedName
             # Create User
-            $secpasswd = ConvertTo-SecureString -String $Password -AsPlainText -Force
-            New-ADUser -Name $FirstName+" "+$LastName -DisplayName $FirstName+" "+$LastName -SamAccountName $Username 
-            -GivenName $FirstName -Surname $LastName  -AccountPassword($secpasswd) -Enabled $true 
-            -Company $Company -Office $Office -Department $Department 
-            -EmailAddress $EmailAddress  -Title $Title 
+            $secpasswd = ConvertTo-SecureString -String $PasswordBox.Text -AsPlainText -Force
+            New-ADUser -Name $FirstNameBox.Text+" "+$LastNameBox.Text -DisplayName $FirstNameBox.Text+" "+$LastNameBox.Text -SamAccountName $UsernameBox.Text 
+            -GivenName $FirstNameBox.Text -Surname $LastNameBox.Text  -AccountPassword($secpasswd) -Enabled $true 
+            -Company $CompanyBox.Text -Office $OfficeBox.Text -Department $DepartmentBox.Text 
+            -EmailAddress $EmailBox.Text  -Title $TitleBox.Text 
             -manager $ManagerDN 
-            -OfficePhone $PhoneNumber  -UserPrincipalName $EmailAddress
+            -OfficePhone $PhoneBox.Text  -UserPrincipalName $EmailBox.Text
             
-            $UserID = Get-ADUser $Username
+            $UserID = Get-ADUser $UsernameBox.Text
             
             #OU Move based on company name
-            $UserDN = Get-ADUser -Filter { displayName -like $FirstName+" "+$LastName } | Select-Object -ExpandProperty DistinguishedName
+            $UserDN = Get-ADUser -Filter { displayName -like $FirstNameBox.Text+" "+$LastNameBox.Text } | Select-Object -ExpandProperty DistinguishedName
             if ( $Company -eq "Schuber Mitchell Homes" ) {
                 Move-ADObject -Identity $UserDN -TargetPath "OU=Employees,OU=Joplin,DC=schubermitchell,DC=com"
             }
@@ -277,7 +277,7 @@ Function Show-UserCreate {
             Start-ADSyncSyncCycle -PolicyType Initial
 
             # Verify user exists and send confirmation of successful operation
-            if ( Get-ADUser -identity $Username -neq "" ) {
+            if ( $null -neq Get-ADUser -identity $UsernameBox.Text ) {
                 [System.Windows.Forms.MessageBox]::Show('User was successfully added to domain.','Success')
             }
         }
@@ -288,7 +288,7 @@ Function Show-UserCreate {
                 # Connect to AzureAD and add groups
         Connect-AzureAD 
         Connect-ExchangeOnline 
-        $AzureUserEmail = $Email
+        $AzureUserEmail = $EmailBox.Text
         $AzureUserID = (Get-AzureADuser -objectid $azureuseremail ).objectid
 
         # Iterate through each item in list from the hashtable and add group membership
@@ -303,7 +303,7 @@ Function Show-UserCreate {
         Install-module Microsoft.Graph.Identity.Signins
         Install-Module Microsoft.Graph.Beta -AllowClobber
         Connect-MgGraph -Scopes "User.Read.all","UserAuthenticationMethod.Read.All","UserAuthenticationMethod.ReadWrite.All"
-        New-MgUserAuthenticationPhoneMethod -UserId $azureuserid -phoneType "mobile" -phoneNumber "+"+$PhoneNumber
+        New-MgUserAuthenticationPhoneMethod -UserId $azureuserid -phoneType "mobile" -phoneNumber "+"+$PhoneBox.Text
     }
 
     # Creating main form
@@ -477,7 +477,7 @@ Function Show-UserCreate {
     $FLButton.Add_Click({Format-Email("FL")})
     $GroupsButton.Add_Click({$Script:GroupMembership = Get-Groups})
     $ClearButton.Add_Click({Clear-Form})
-    $ExecuteButton.Add_Click({Set-User($FirstNameBox.Text, $LastNameBox.Text, $UsernameBox.Text, $PasswordBox.Text, $CompanyBox.Text, $OfficeBox.Text, $DepartmentBox.Text, $EmailBox.Text, $TitleBox.Text, $ManagerBox.Text, $PhoneBox.Text, $GroupMembership)})
+    $ExecuteButton.Add_Click({Set-User()})
 
     # Display Form
     [void]$UserCreateForm.ShowDialog()
