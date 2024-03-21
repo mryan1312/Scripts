@@ -24,6 +24,8 @@ Function Show-UserCreate {
         $PhoneBox.Text = ""
         $TitleBox.Text = ""
         $CompanyBox.Text = ""
+        $LogonDomainBox.Text = ""
+        $EmailDomainBox.Text = ""
         $LastNameBox.Text = ""
         $PasswordBox.Text = ""
         $OfficeBox.Text = ""
@@ -277,7 +279,8 @@ Function Show-UserCreate {
             Start-ADSyncSyncCycle -PolicyType Initial
 
             # Verify user exists and send confirmation of successful operation
-            if ( $null -neq Get-ADUser -identity $UsernameBox.Text ) {
+            $UserCompleteCheck = Get-ADUser -identity $UsernameBox.Text
+            if ( $null -ne $UserCompleteCheck ) {
                 [System.Windows.Forms.MessageBox]::Show('User was successfully added to domain.','Success')
             }
         }
@@ -477,7 +480,7 @@ Function Show-UserCreate {
     $FLButton.Add_Click({Format-Email("FL")})
     $GroupsButton.Add_Click({$Script:GroupMembership = Get-Groups})
     $ClearButton.Add_Click({Clear-Form})
-    $ExecuteButton.Add_Click({Set-User()})
+    $ExecuteButton.Add_Click({Set-User})
 
     # Display Form
     [void]$UserCreateForm.ShowDialog()
