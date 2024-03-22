@@ -251,7 +251,8 @@ Function Show-UserCreate {
             $ManagerDN = Get-ADUser -Filter { displayName -like $ManagerBox.Text } | Select-Object -ExpandProperty DistinguishedName
             # Create User
             $secpasswd = ConvertTo-SecureString -String $PasswordBox.Text -AsPlainText -Force
-            New-ADUser -Name $FirstNameBox.Text+" "+$LastNameBox.Text -DisplayName $FirstNameBox.Text+" "+$LastNameBox.Text -SamAccountName $UsernameBox.Text 
+            $FullName = $FirstNameBox.Text+" "+$LastNameBox.Text
+            New-ADUser -Name $FullName -DisplayName $FullName -SamAccountName $UsernameBox.Text 
             -GivenName $FirstNameBox.Text -Surname $LastNameBox.Text  -AccountPassword($secpasswd) -Enabled $true 
             -Company $CompanyBox.Text -Office $OfficeBox.Text -Department $DepartmentBox.Text 
             -EmailAddress $EmailBox.Text  -Title $TitleBox.Text 
@@ -261,7 +262,7 @@ Function Show-UserCreate {
             $UserID = Get-ADUser $UsernameBox.Text
             
             #OU Move based on company name
-            $UserDN = Get-ADUser -Filter { displayName -like $FirstNameBox.Text+" "+$LastNameBox.Text } | Select-Object -ExpandProperty DistinguishedName
+            $UserDN = Get-ADUser -Filter { displayName -like $FullName } | Select-Object -ExpandProperty DistinguishedName
             if ( $Company -eq "Schuber Mitchell Homes" ) {
                 Move-ADObject -Identity $UserDN -TargetPath "OU=Employees,OU=Joplin,DC=schubermitchell,DC=com"
             }
