@@ -1,3 +1,4 @@
+# TODO Change Company to drop-down selection, Add direct report entry
 # Loading windows forms assembly
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
