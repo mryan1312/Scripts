@@ -5,44 +5,46 @@ sudo chown root $plistfile
 
 #writing the plist
 cat > $plistfile << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<?xml version="1.0" encoding="UTF-8"?
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>Label</key>
-    <string>com.user.loginscript</string>
-    <key>ProgramArguments</key>
-    <array>
-        <string>/bin/sh</string>
-        <string>/Users/Shared/map_drives.sh</string>
-    </array>
-    <key>RunAtLoad</key>
-    <true/>
-    <key>KeepAlive</key>
-    <dict>
-        <key>SuccessfulExit</key>
-        <false/>
-    </dict>
+<key>Label</key>
+<string>com.schuber.mapdrives.plist</string>
+<key>RunAtLoad</key>
+<true/>
+<key>StandardErrorPath</key>
+<string>/var/log/mapdrives/stderr.log</string>
+<key>StandardOutPath</key>
+<string>/var/log/mapdrives/stdout.log</string>
+<key>EnvironmentVariables</key>
+<dict>
+<key>PATH</key>
+<string><![CDATA[/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin]]>
+</string>
+</dict>
+<key>ProgramArguments</key>
+<array>
+<string>/Users/Shared/map_drives.sh</string>
+</array>
 </dict>
 </plist>
 EOF
 
+#Writing the script to shared folder
 scriptfile=/Users/Shared/map_drives.sh
 sudo touch $scriptfile
 sudo chmod +x $scriptfile
 sudo chmod 777 $scriptfile
-# Writing the script to shared folder
 sudo cat > $scriptfile << 'EOF'
 #!/bin/bash
-
 # Get the current user's username and set desktop directory
 user=$(whoami)
 directory="$HOME/Desktop/"
-
 # Check AD group membership
 groupMembership="$(id -Gn $user)"
-
-# Remove old shortcuts, in case there are changes
+# Check for specific group memberships and mount shares accordingly
 rm $directory"Build Scans.command"
 rm $directory"Sales Scans.command"
 rm $directory"Purchasing Scans.command"
@@ -52,13 +54,11 @@ rm $directory"IT Scans.command"
 rm $directory"HR Scans.command"
 rm $directory"Architecture Scans.command"
 rm $directory"Accounting Scans.command"
-
-# Check for specific group memberships and create shortcuts on desktop to open in finder
 if [[ $groupMembership == *"SMH_MO-JAS_Build_Access"* ]]; then
     touch $directory"Build Scans.command"
     chmod +x $directory"Build Scans.command"
-    echo '#!/bin/bash' | tee -a "$directory"Build Scans.command"
-    echo "open \"smb://192.168.0.6/MO-JAS-Other Scans/\"" | -a $directory"Build Scans.command"
+    echo '#!/bin/bash' | tee -a $directory"Build Scans.command"
+    echo "open \"smb://192.168.0.6/MO-JAS-Other Scans/\"" | tee -a $directory"Build Scans.command"
 fi
 if [[ $groupMembership == *"SMH_MO-JAS_Sales_Access"* ]]; then
     touch $directory"Sales Scans.command"
@@ -111,4 +111,4 @@ fi
 EOF
 
 # Load the plist using launchctl
-sudo launchctl load $plistfile
+launchctl load -w $plistfile
