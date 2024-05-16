@@ -263,7 +263,7 @@ Function Show-UserCreate {
             #OU Move based on company name
             $UserDN = Get-ADUser -Filter { displayName -like $FullName } | Select-Object -ExpandProperty DistinguishedName
             if ( $Company -eq "Schuber Mitchell Homes" ) {
-                Move-ADObject -Identity $UserDN -TargetPath "OU=Employees,OU=Joplin,DC=schubermitchell,DC=com"
+                Move-ADObject -Identity $UserDN -TargetPath "OU=Employees,OU=Schuber Mitchell Homes LLC,DC=schubermitchell,DC=com"
             }
             if ( $Company -eq "Land Development Group" ) {
                 Move-ADObject -Identity $UserDN -TargetPath "OU=Employees,OU=Land Group LLC,DC=schubermitchell,DC=com"
