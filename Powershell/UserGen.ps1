@@ -1,4 +1,6 @@
-# TODO Change Company to drop-down selection, Add direct report entry
+# TODO Change Company to drop-down selection to to email domain, Add direct report entry, get rid of logon domain and hardcode it as it is always the same,
+# May need to update OU structer when moving new users, export/save function is broken currently,  
+
 # Loading windows forms assembly
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
@@ -245,17 +247,18 @@ Function Show-UserCreate {
 
     function Set-User {
         # Check if username already exists in AD
-        $UserCheck = Get-ADUser -identity $UsernameBox.Text
+        $UserCheck = Get-ADUser -identity $($UsernameBox.Text)
         # Proceed to run AD Creation if return value is empty
         if ( $null -eq $UserCheck) {
             # Get Manager DN
-            $ManagerDN = Get-ADUser -Filter { displayName -like $ManagerBox.Text } | Select-Object -ExpandProperty DistinguishedName
+            $ManagerDN = Get-ADUser -Filter { displayName -like "$($ManagerBox.Text)" } | Select-Object -ExpandProperty DistinguishedName
             # Create User
-            $secpasswd = ConvertTo-SecureString -String $PasswordBox.Text -AsPlainText -Force
-            $FullName = $FirstNameBox.Text+" "+$LastNameBox.Text
-            New-ADUser -Name $FullName -DisplayName $FullName -SamAccountName $UsernameBox.Text -GivenName $FirstNameBox.Text -Surname $LastNameBox.Text  -AccountPassword($secpasswd) -Enabled $true -Company $CompanyBox.Text -Office $OfficeBox.Text -Department $DepartmentBox.Text -EmailAddress $EmailBox.Text  -Title $TitleBox.Text -manager $ManagerDN -OfficePhone $PhoneBox.Text  -UserPrincipalName $EmailBox.Text
+            $secpasswd = ConvertTo-SecureString -String $($PasswordBox.Text) -AsPlainText -Force
+            $FullName = $($FirstNameBox.Text)+" "+$($LastNameBox.Text)
+            New-ADUser -Name $FullName -DisplayName $FullName -SamAccountName $($UsernameBox.Text) -GivenName $($FirstNameBox.Text) -Surname $($LastNameBox.Text)  -AccountPassword($secpasswd) -Enabled $true -Company $($CompanyBox.Text) -Office $($OfficeBox.Text) -Department $($DepartmentBox.Text) -EmailAddress $($EmailBox.Text)  -Title $($TitleBox.Text) -manager $ManagerDN -OfficePhone $($PhoneBox.Text)  -UserPrincipalName $($EmailBox.Text)
             
-            $UserID = Get-ADUser $UsernameBox.Text
+            $UserID = Get-ADUser $($UsernameBox.Text)
+            Set-ADUser $userid -add @{proxyAddresses ="smtp:$($EmailBox.Text)"}
             
             #OU Move based on company name
             $UserDN = Get-ADUser -Filter { displayName -like $FullName } | Select-Object -ExpandProperty DistinguishedName
@@ -272,13 +275,14 @@ Function Show-UserCreate {
 
 
 
-            # Sync changes to Cloud            
-            Start-ADSyncSyncCycle -PolicyType Initial
-
             # Verify user exists and send confirmation of successful operation
-            $UserCompleteCheck = Get-ADUser -identity $UsernameBox.Text
+            $UserCompleteCheck = Get-ADUser -identity $($UsernameBox.Text)
             if ( $null -ne $UserCompleteCheck ) {
                 [System.Windows.Forms.MessageBox]::Show('User was successfully added to domain.','Success')
+                # Sync changes to Cloud            
+                $SyncResult = Start-ADSyncSyncCycle -PolicyType Initial
+                echo $SynchResult
+                Start-Sleep -Seconds 15
             }
         }
         else {
@@ -288,7 +292,7 @@ Function Show-UserCreate {
                 # Connect to AzureAD and add groups
         Connect-AzureAD 
         Connect-ExchangeOnline 
-        $AzureUserEmail = $EmailBox.Text
+        $AzureUserEmail = $($EmailBox.Text)
         $AzureUserID = (Get-AzureADuser -objectid $azureuseremail ).objectid
 
         # Iterate through each item in list from the hashtable and add group membership
@@ -308,23 +312,23 @@ Function Show-UserCreate {
         Install-module Microsoft.Graph.Identity.Signins
         Install-Module Microsoft.Graph.Beta -AllowClobber
         Connect-MgGraph -Scopes "User.Read.all","UserAuthenticationMethod.Read.All","UserAuthenticationMethod.ReadWrite.All"
-        New-MgUserAuthenticationPhoneMethod -UserId $azureuserid -phoneType "mobile" -phoneNumber "+1"+$PhoneBox.Text
+        New-MgUserAuthenticationPhoneMethod -UserId $azureuserid -phoneType "mobile" -phoneNumber ('+1'+$($PhoneBox.Text))
     }
 
     function Export-User {
         echo "
         # Check if username already exists in AD
-        $UserCheck = Get-ADUser -identity $UsernameBox.Text
+        $UserCheck = Get-ADUser -identity $($UsernameBox.Text)
         # Proceed to run AD Creation if return value is empty
         if ( $null -eq $UserCheck) {
             # Get Manager DN
-            $ManagerDN = Get-ADUser -Filter { displayName -like $ManagerBox.Text } | Select-Object -ExpandProperty DistinguishedName
+            $ManagerDN = Get-ADUser -Filter { displayName -like $($ManagerBox.Text) } | Select-Object -ExpandProperty DistinguishedName
             # Create User
-            $secpasswd = ConvertTo-SecureString -String $PasswordBox.Text -AsPlainText -Force
-            $FullName = $FirstNameBox.Text+" "+$LastNameBox.Text
-            New-ADUser -Name $FullName -DisplayName $FullName -SamAccountName $UsernameBox.Text -GivenName $FirstNameBox.Text -Surname $LastNameBox.Text  -AccountPassword($secpasswd) -Enabled $true -Company $CompanyBox.Text -Office $OfficeBox.Text -Department $DepartmentBox.Text -EmailAddress $EmailBox.Text  -Title $TitleBox.Text -manager $ManagerDN -OfficePhone $PhoneBox.Text  -UserPrincipalName $EmailBox.Text
+            $secpasswd = ConvertTo-SecureString -String $($PasswordBox.Text) -AsPlainText -Force
+            $FullName = $($FirstNameBox.Text)+" "+$($LastNameBox.Text)
+            New-ADUser -Name $FullName -DisplayName $FullName -SamAccountName $($UsernameBox.Text) -GivenName $($FirstNameBox.Text) -Surname $($LastNameBox.Text)  -AccountPassword($secpasswd) -Enabled $true -Company $($CompanyBox.Text) -Office $($OfficeBox.Text) -Department $($DepartmentBox.Text) -EmailAddress $($EmailBox.Text)  -Title $($TitleBox.Text) -manager $ManagerDN -OfficePhone $($PhoneBox.Text)  -UserPrincipalName $($EmailBox.Text)
             
-            $UserID = Get-ADUser $UsernameBox.Text
+            $UserID = Get-ADUser $($UsernameBox.Text)
             
             #OU Move based on company name
             $UserDN = Get-ADUser -Filter { displayName -like $FullName } | Select-Object -ExpandProperty DistinguishedName
@@ -345,7 +349,7 @@ Function Show-UserCreate {
             Start-ADSyncSyncCycle -PolicyType Initial
 
             # Verify user exists and send confirmation of successful operation
-            $UserCompleteCheck = Get-ADUser -identity $UsernameBox.Text
+            $UserCompleteCheck = Get-ADUser -identity $($UsernameBox.Text)
             if ( $null -ne $UserCompleteCheck ) {
                 [System.Windows.Forms.MessageBox]::Show('User was successfully added to domain.','Success')
             }
@@ -357,7 +361,7 @@ Function Show-UserCreate {
                 # Connect to AzureAD and add groups
         Connect-AzureAD 
         Connect-ExchangeOnline 
-        $AzureUserEmail = $EmailBox.Text
+        $AzureUserEmail = $($EmailBox.Text)
         $AzureUserID = (Get-AzureADuser -objectid $azureuseremail ).objectid
 
         # Iterate through each item in list from the hashtable and add group membership
@@ -377,7 +381,7 @@ Function Show-UserCreate {
         Install-module Microsoft.Graph.Identity.Signins
         Install-Module Microsoft.Graph.Beta -AllowClobber
         Connect-MgGraph -Scopes "User.Read.all","UserAuthenticationMethod.Read.All","UserAuthenticationMethod.ReadWrite.All"
-        New-MgUserAuthenticationPhoneMethod -UserId $azureuserid -phoneType "mobile" -phoneNumber "+1"+$PhoneBox.Text
+        New-MgUserAuthenticationPhoneMethod -UserId $azureuserid -phoneType "mobile" -phoneNumber ('+1'+$($PhoneBox.Text))
         " | Out-File -FilePath C:\usergen.txt
     }
 
