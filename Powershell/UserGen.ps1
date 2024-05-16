@@ -253,12 +253,7 @@ Function Show-UserCreate {
             # Create User
             $secpasswd = ConvertTo-SecureString -String $PasswordBox.Text -AsPlainText -Force
             $FullName = $FirstNameBox.Text+" "+$LastNameBox.Text
-            New-ADUser -Name $FullName -DisplayName $FullName -SamAccountName $UsernameBox.Text 
-            -GivenName $FirstNameBox.Text -Surname $LastNameBox.Text  -AccountPassword($secpasswd) -Enabled $true 
-            -Company $CompanyBox.Text -Office $OfficeBox.Text -Department $DepartmentBox.Text 
-            -EmailAddress $EmailBox.Text  -Title $TitleBox.Text 
-            -manager $ManagerDN 
-            -OfficePhone $PhoneBox.Text  -UserPrincipalName $EmailBox.Text
+            New-ADUser -Name $FullName -DisplayName $FullName -SamAccountName $UsernameBox.Text -GivenName $FirstNameBox.Text -Surname $LastNameBox.Text  -AccountPassword($secpasswd) -Enabled $true -Company $CompanyBox.Text -Office $OfficeBox.Text -Department $DepartmentBox.Text -EmailAddress $EmailBox.Text  -Title $TitleBox.Text -manager $ManagerDN -OfficePhone $PhoneBox.Text  -UserPrincipalName $EmailBox.Text
             
             $UserID = Get-ADUser $UsernameBox.Text
             
@@ -301,14 +296,89 @@ Function Show-UserCreate {
             Add-DistributionGroupMember -Identity $DistroName -Member $AzureUserID
         }
         foreach ($UnifiedName in $GroupMembership["UnifiedLinks"]) {
-            Add-UnifiedGroupLinks -Identity $UnifiedName -LinkType "Members" -Links $AzureUserEmail
+            if ($UnifiedName -eq "Letsignit_Deploy") {
+                Add-AzureADGroupMember -ObjectID "748b7d01-86aa-4d5c-8097-cf278e6c683e" -RefObjectID $azureuserid
+            }
+            else {
+                Add-UnifiedGroupLinks -Identity $UnifiedName -LinkType "Members" -Links $AzureUserEmail
+            }
         }
 
         # MFA
         Install-module Microsoft.Graph.Identity.Signins
         Install-Module Microsoft.Graph.Beta -AllowClobber
         Connect-MgGraph -Scopes "User.Read.all","UserAuthenticationMethod.Read.All","UserAuthenticationMethod.ReadWrite.All"
-        New-MgUserAuthenticationPhoneMethod -UserId $azureuserid -phoneType "mobile" -phoneNumber "+"+$PhoneBox.Text
+        New-MgUserAuthenticationPhoneMethod -UserId $azureuserid -phoneType "mobile" -phoneNumber "+1"+$PhoneBox.Text
+    }
+
+    function Export-User {
+        echo "
+        # Check if username already exists in AD
+        $UserCheck = Get-ADUser -identity $UsernameBox.Text
+        # Proceed to run AD Creation if return value is empty
+        if ( $null -eq $UserCheck) {
+            # Get Manager DN
+            $ManagerDN = Get-ADUser -Filter { displayName -like $ManagerBox.Text } | Select-Object -ExpandProperty DistinguishedName
+            # Create User
+            $secpasswd = ConvertTo-SecureString -String $PasswordBox.Text -AsPlainText -Force
+            $FullName = $FirstNameBox.Text+" "+$LastNameBox.Text
+            New-ADUser -Name $FullName -DisplayName $FullName -SamAccountName $UsernameBox.Text -GivenName $FirstNameBox.Text -Surname $LastNameBox.Text  -AccountPassword($secpasswd) -Enabled $true -Company $CompanyBox.Text -Office $OfficeBox.Text -Department $DepartmentBox.Text -EmailAddress $EmailBox.Text  -Title $TitleBox.Text -manager $ManagerDN -OfficePhone $PhoneBox.Text  -UserPrincipalName $EmailBox.Text
+            
+            $UserID = Get-ADUser $UsernameBox.Text
+            
+            #OU Move based on company name
+            $UserDN = Get-ADUser -Filter { displayName -like $FullName } | Select-Object -ExpandProperty DistinguishedName
+            if ( $Company -eq "Schuber Mitchell Homes" ) {
+                Move-ADObject -Identity $UserDN -TargetPath "OU=Employees,OU=Joplin,DC=schubermitchell,DC=com"
+            }
+            if ( $Company -eq "Land Development Group" ) {
+                Move-ADObject -Identity $UserDN -TargetPath "OU=Employees,OU=Land Group LLC,DC=schubermitchell,DC=com"
+            }
+            # Iterate through each item in list from the hashtable and add group membership
+            foreach ($GroupName in $GroupMembership["LocalGroups"]) {
+                Add-ADGroupMember -Identity $GroupName -Members $UserId
+            }
+
+
+
+            # Sync changes to Cloud            
+            Start-ADSyncSyncCycle -PolicyType Initial
+
+            # Verify user exists and send confirmation of successful operation
+            $UserCompleteCheck = Get-ADUser -identity $UsernameBox.Text
+            if ( $null -ne $UserCompleteCheck ) {
+                [System.Windows.Forms.MessageBox]::Show('User was successfully added to domain.','Success')
+            }
+        }
+        else {
+            # Username already exists in AD, need to check if user exists or username is not unique.
+            [System.Windows.Forms.MessageBox]::Show('Username already exists in AD. No action taken.','WARNING')
+        }
+                # Connect to AzureAD and add groups
+        Connect-AzureAD 
+        Connect-ExchangeOnline 
+        $AzureUserEmail = $EmailBox.Text
+        $AzureUserID = (Get-AzureADuser -objectid $azureuseremail ).objectid
+
+        # Iterate through each item in list from the hashtable and add group membership
+        foreach ($DistroName in $GroupMembership["DistroGroups"]) {
+            Add-DistributionGroupMember -Identity $DistroName -Member $AzureUserID
+        }
+        foreach ($UnifiedName in $GroupMembership["UnifiedLinks"]) {
+            if ($UnifiedName -eq "Letsignit_Deploy") {
+                Add-AzureADGroupMember -ObjectID "748b7d01-86aa-4d5c-8097-cf278e6c683e" -RefObjectID $azureuserid
+            }
+            else {
+                Add-UnifiedGroupLinks -Identity $UnifiedName -LinkType "Members" -Links $AzureUserEmail
+            }
+        }
+
+        # MFA
+        Install-module Microsoft.Graph.Identity.Signins
+        Install-Module Microsoft.Graph.Beta -AllowClobber
+        Connect-MgGraph -Scopes "User.Read.all","UserAuthenticationMethod.Read.All","UserAuthenticationMethod.ReadWrite.All"
+        New-MgUserAuthenticationPhoneMethod -UserId $azureuserid -phoneType "mobile" -phoneNumber "+1"+$PhoneBox.Text
+        " | Out-File -FilePath C:\usergen.txt
     }
 
     # Creating main form
@@ -483,6 +553,7 @@ Function Show-UserCreate {
     $GroupsButton.Add_Click({$Script:GroupMembership = Get-Groups})
     $ClearButton.Add_Click({Clear-Form})
     $ExecuteButton.Add_Click({Set-User})
+    $SaveButton.Add_Click({Export-User})
 
     # Display Form
     [void]$UserCreateForm.ShowDialog()
