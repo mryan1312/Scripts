@@ -1,0 +1,701 @@
+Hostname,Last Seen,First Seen,Platform,OS Version,OS Build,OS Product Name,Kernel Version,Model,Manufacturer,Type,Chassis,Last Reboot,OU,Site,Prevention Policy,Response Policy,Sensor Update Policy,Host Retention Policy,USB Device Policy,Kubernetes Admission Control Policy,Host ID,Local IP,Connection IP,Default Gateway IP,External IP,Domain,MAC Address,Connection MAC Address,Detections Disabled,Status,CPUID,Serial Number,Sensor Version,Sensor Tags,Cloud Service Provider,Cloud Service Account ID,Cloud Service Instance ID,Cloud Service Zone/Group,Kubernetes Cluster ID,Kubernetes Server Git Version,Kubernetes Server Version,RFM,Linux Sensor Mode,Deployment Type,Email,Pod ID,Pod Name,Pod Namespace,Pod Labels,Pod Annotations,Pod IP4,Pod IP6,Pod Hostname,Pod Host IP4,Pod Host IP6,Pod Service Account Name,Host Groups,Last Logged In User Account,Last User Account Login,Last Logged In UID,Last Logged In User SID
+SMH-L115,2024-11-14T22:54:31Z,2023-10-06T16:53:34Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ZBook Power G7 Mobile Workstation,HP,Workstation,Laptop,2024-11-14T18:48:30Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 19:37 UTC",No policy,"platform_default
+24 Oct 24 13:31 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 20:18 UTC",No policy,No policy,db3cbd6f05a54f1fba8a59602562b07d,192.168.0.155,172.16.100.20,172.16.100.1,104.219.185.179,schubermitchell.com,30-24-a9-76-05-c0,68-54-5a-44-1f-7e,,normal,656978,5CD0519344,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,kyork,2024-11-14T14:07:53Z,,S-1-5-21-2030993556-1131631915-3534476973-1504
+SMH-L269,2024-11-15T15:38:12Z,2024-09-27T18:17:15Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4455,82QG,LENOVO,Workstation,Laptop,2024-11-13T14:25:40Z,,,"Production Prevent - Phase 3
+19 Oct 24 04:33 UTC",No policy,"platform_default
+23 Oct 24 23:54 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 18:20 UTC",No policy,No policy,712dbc80c4bd4a27ba9e84c518277978,172.16.106.10,172.16.106.10,172.16.106.1,66.119.22.84,,2c-33-58-cb-95-85,2c-33-58-cb-95-85,,normal,591523,PF3TD8Z6,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,rroller,2024-11-14T17:30:57Z,,S-1-5-21-995898504-1459647906-803253859-1003
+SMH-L141,2024-11-15T15:15:14Z,2023-10-09T13:46:07Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 440 G7,HP,Workstation,Laptop,2024-11-07T17:39:47Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+21 Oct 24 14:49 UTC",No policy,"platform_default
+24 Oct 24 13:42 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 20:00 UTC",No policy,No policy,c4214d8b4646460a8d2d0e826d8da78b,172.16.18.50,172.16.18.50,172.16.18.1,72.24.150.2,schubermitchell.com,d8-c0-a6-ed-ba-db,d8-c0-a6-ed-ba-db,,normal,526060,5CD0422V8Q,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jhafer,2024-10-25T15:27:39Z,,S-1-5-21-2030993556-1131631915-3534476973-1517
+SMH-L195,2024-11-14T22:58:48Z,2023-10-06T16:30:22Z,Windows,Windows 11,26100,Windows 11 Pro,10.0.26100.2033,HP ProBook x360 435 G8 Notebook PC,HP,Workstation,Laptop,2024-11-13T13:59:50Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:19 UTC",No policy,"platform_default
+24 Oct 24 13:36 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:47 UTC",No policy,No policy,932ae9c85b254c0e902a63d07c5a83d9,192.168.0.116,2604:2d80:dc88:a100:f90a:ac49:9835:a86f,fe80:0:0:0:ea9f:80ff:fea5:677d,104.219.185.179,schubermitchell.com,a0-ce-c8-3a-b7-13,cc-6b-1e-98-58-e7,,normal,10817280,5CG136B71W,7.17.18721.0,,,,,,,,,yes,,,,,,,,,,,,,,,Windows - Workstations,adoran,2023-11-15T15:43:38Z,,
+SMH-L71.local,2024-11-14T11:27:37Z,2024-07-09T16:20:49Z,Mac,Sequoia (15),24B83,,24.1.0,"MacBookPro16,2",Apple Inc.,Workstation,Laptop,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 16:10 UTC",No policy,"platform_default
+17 Oct 24 13:29 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:25 UTC",No policy,No policy,136893c30b1c4742b7da9ce3a6e71433,192.168.0.112,35.162.224.228,,104.219.185.179,SMH,e8-ea-6a-4d-92-dd,,,normal,460517,C02CV6T9ML7H,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,mmcelwee,2024-11-13T16:49:20Z,1974826927,S-1-5-21-2030993556-1131631915-3534476973-2904
+SMH-L250,2024-11-15T04:35:16Z,2024-09-27T17:23:30Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4455,Surface Pro 7,Microsoft Corporation,Workstation,Laptop,2024-11-15T04:34:35Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:32 UTC",No policy,"platform_default
+28 Oct 24 02:08 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 17:26 UTC",No policy,No policy,68ec3416d161487cac61039fa15c88c2,172.20.10.2,172.20.10.2,172.20.10.1,166.199.99.134,,98-af-65-1a-cb-8d,98-af-65-1a-cb-8d,,normal,460517,024446101053,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Steve San Paolo,2024-11-15T03:33:01Z,,S-1-5-21-1104932599-442287219-1478099738-1001
+SMH-L148,2024-11-15T15:24:30Z,2023-10-06T16:54:43Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-14T19:12:57Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:20 UTC",No policy,"platform_default
+24 Oct 24 01:01 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:48 UTC",No policy,No policy,386435b131ca47879da5d01dd953614f,192.168.0.126,172.16.100.179,172.16.100.1,104.219.185.179,schubermitchell.com,b0-22-7a-cc-34-c0,fc-b3-bc-3c-ca-8f,,normal,526017,5CD114G9MB,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,kglidewell,2024-11-13T19:06:57Z,,S-1-5-21-2030993556-1131631915-3534476973-2824
+SMH-L264,2024-11-15T15:32:49Z,2024-09-27T18:25:30Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4317,Surface Pro 9,Microsoft Corporation,Workstation,Laptop,2024-10-11T16:29:32Z,,,"Production Prevent - Phase 3
+18 Oct 24 16:01 UTC",No policy,"platform_default
+24 Oct 24 14:31 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 18:32 UTC",No policy,No policy,4ea4ca49049d4e37bc674e265ef24ac1,172.20.10.2,172.20.10.2,172.20.10.1,199.192.157.63,,c8-15-4e-9a-39-f9,48-51-c5-4b-a6-1d,,normal,591524,0F38PXF24033BF,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Cody Duneman,2024-11-06T12:27:01Z,,S-1-5-21-2511502753-2739829492-3726332064-1002
+SMH-L69,2024-11-15T15:34:34Z,2023-10-06T20:24:44Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G7,HP,Workstation,Laptop,2024-11-09T08:51:28Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+22 Oct 24 12:21 UTC",No policy,"platform_default
+24 Oct 24 12:00 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+09 Aug 24 00:30 UTC",No policy,No policy,66460de52d0b482ab330cb352ddc6d2e,172.16.108.2,2600:8804:7b05:e500:2850:fbc3:2b73:600c,fe80:0:0:0:e2db:d1ff:fec0:149a,72.222.76.173,schubermitchell.com,70-66-55-cc-e0-a3,70-66-55-cc-e0-a3,,normal,526060,5CD0243Y4J,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,sjennings,2024-11-08T21:30:38Z,,S-1-5-21-2030993556-1131631915-3534476973-1201
+SMH-L181,2024-11-15T15:17:51Z,2023-10-06T16:54:09Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-13T23:01:05Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:33 UTC",No policy,"platform_default
+24 Oct 24 13:19 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:41 UTC",No policy,No policy,a61de2dccb6a4f159138f35f97666c4a,192.168.0.118,192.168.0.118,192.168.0.1,104.219.185.179,schubermitchell.com,c0-18-03-6d-ff-6b,c0-18-03-6d-ff-6b,,normal,526017,5CD1526KYP,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,scantrell,2024-11-13T14:05:48Z,,S-1-5-21-2030993556-1131631915-3534476973-1560
+SMH-L64,2024-11-15T15:48:10Z,2023-10-09T13:45:04Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G7,HP,Workstation,Laptop,2024-11-14T14:19:02Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:25 UTC",No policy,"platform_default
+23 Oct 24 23:38 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+12 Aug 24 13:25 UTC",No policy,No policy,28ba53f0c3a24bd785ab7077c9c35521,192.168.4.24,192.168.4.24,192.168.4.1,72.14.30.61,schubermitchell.com,70-66-55-05-aa-0f,70-66-55-05-aa-0f,,normal,526060,5CD012DYMD,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jprater,2024-11-12T19:49:02Z,,S-1-5-21-2030993556-1131631915-3534476973-1255
+SMH-L268,2024-11-14T22:32:44Z,2024-09-27T17:23:33Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4317,82QE,LENOVO,Workstation,Laptop,2024-11-07T17:59:21Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:24 UTC",No policy,"platform_default
+24 Oct 24 12:52 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 17:26 UTC",No policy,No policy,74955d4ac25c46c1b0a19e829cfb92cd,192.168.137.1,192.168.50.108,192.168.50.1,198.182.179.64,,c6-03-a8-25-34-06,c4-03-a8-25-34-06,,normal,591524,PF3RCWL6,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Chris Smith,2024-11-08T14:25:26Z,,S-1-5-21-3179138672-769610689-990715425-1003
+LDGP-T12,2024-11-13T17:25:52Z,2023-10-06T20:57:01Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.4894,"28012 MS3 MAIN PCBA (128GB eMMC, 8GB RAM)","Juniper Systems, Inc.",Workstation,Laptop,2024-11-13T16:28:32Z,"Workstations, LDG Companies LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+23 Oct 24 13:42 UTC",No policy,"platform_default
+28 Oct 24 21:16 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+13 Aug 24 12:00 UTC",No policy,No policy,48f00ff53fd14e18ae65a2b87c443a29,172.16.100.145,172.16.100.145,172.16.100.1,104.219.185.179,,cc-4b-73-99-54-6c,64-bc-58-8a-5c-f5,,normal,329417,265246,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,T12User,2024-11-13T16:16:16Z,,S-1-5-21-2586849483-4222675128-2786545422-1009
+SMH-L72,2024-11-15T15:30:20Z,2024-06-21T23:53:50Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 440 G7,HP,Workstation,Laptop,2024-10-23T09:02:02Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:27 UTC",No policy,"platform_default
+24 Oct 24 00:33 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:34 UTC",No policy,No policy,0219804d5ce042bfbd56b0f68c484c21,192.168.1.10,172.16.100.254,172.16.100.1,104.219.185.179,schubermitchell.com,bc-e9-2f-80-ef-df,70-66-55-ca-a6-b5,,normal,526060,5CD024248G,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,SMHADMIN,2024-09-19T20:40:50Z,,S-1-5-21-1714084043-2391113976-3755257990-1002
+SMH-L170,2024-11-15T15:27:02Z,2023-10-09T13:45:09Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-10-30T07:10:53Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:20 UTC",No policy,"platform_default
+24 Oct 24 00:24 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:34 UTC",No policy,No policy,d820fa4043bb43ca92fdd63c8de622b0,192.168.0.145,192.168.0.145,192.168.0.1,104.219.185.179,schubermitchell.com,b0-22-7a-cc-32-da,b0-22-7a-cc-32-da,,normal,526017,5CD114G93N,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,kloomis,2024-10-18T13:21:29Z,,S-1-5-21-2030993556-1131631915-3534476973-1307
+SMH-L223,2024-11-15T15:26:09Z,2023-11-29T23:39:24Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP Pro x360 435 13.3 inch G10 Notebook PC,HP,Workstation,Laptop,2024-11-14T22:52:48Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+21 Oct 24 12:26 UTC",No policy,"platform_default
+24 Oct 24 12:41 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:37 UTC",No policy,No policy,8d891667a02d43daa9df10ab0f797339,172.16.102.36,172.16.102.36,172.16.102.1,72.196.88.162,schubermitchell.com,40-1a-58-cc-d4-7f,40-1a-58-cc-d4-7f,,normal,10817280,5CG343066X,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jtempleton,2024-11-14T22:56:29Z,,S-1-5-21-2030993556-1131631915-3534476973-1296
+SMH-L81.local,2024-10-26T02:06:50Z,2024-04-12T21:16:48Z,Mac,Sequoia (15),24A348,,24.0.0,"MacBookAir9,1",Apple Inc.,Workstation,Laptop,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+23 Oct 24 20:57 UTC",No policy,"platform_default
+23 Oct 24 22:00 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+12 Aug 24 14:25 UTC",No policy,No policy,a5c3aacf27d94957b4296477c236fa74,172.16.100.157,2600:1f14:2d89:8301:1:2:3:406,,104.219.185.179,SMH,3c-22-fb-b8-43-cf,,,normal,460517,FVHCRFQFMNHP,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,estewart,2024-09-24T20:26:13Z,143584021,S-1-5-21-2030993556-1131631915-3534476973-1449
+SMH-L263,2024-11-14T23:32:39Z,2024-09-27T17:22:57Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4249,82YN,LENOVO,Workstation,Laptop,2024-11-07T22:49:15Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:21 UTC",No policy,"platform_default
+24 Oct 24 13:46 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 17:25 UTC",No policy,No policy,dd1d6839b9ee40068ed4c342bb6ef492,192.168.1.67,2600:1702:2a20:21a0:d4b9:30e4:5e24:2543,fe80:0:0:0:1655:b9ff:fe07:32e2,162.230.100.144,,d4-e9-8a-80-eb-b1,d4-e9-8a-80-eb-b1,,normal,722595,YX08KDQ2,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Ximena Martinez,2024-11-07T22:53:01Z,,S-1-5-21-1663273811-3153766204-1441501867-1002
+SMH-L211.local,2024-11-15T13:26:50Z,2024-02-09T16:18:14Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac14,2",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+21 Oct 24 14:46 UTC",No policy,"platform_default
+17 Oct 24 00:23 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:44 UTC",No policy,No policy,b0039ea8a2704e30a18a6a86127742fe,172.16.102.19,2600:1f14:2d89:8302:1:2:3:409,,72.196.88.162,SMH,a2-77-1e-79-1c-7e,,,normal,4294967295,D4FCVX4R9L,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,jwalker,2024-10-03T22:08:59Z,1487256557,S-1-5-21-2030993556-1131631915-3534476973-2809
+SMH-L94,2024-11-14T22:45:02Z,2023-10-06T16:53:35Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.4894,HP ProBook 440 G7,HP,Workstation,Laptop,2024-10-10T19:10:21Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+21 Oct 24 12:13 UTC",No policy,"platform_default
+24 Oct 24 12:18 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:37 UTC",No policy,No policy,9843f6ab0daa4c38b8652b7d8bd634fc,172.16.102.35,172.16.102.35,172.16.102.1,72.196.88.162,schubermitchell.com,d8-c0-a6-70-ac-61,d8-c0-a6-70-ac-61,,normal,526060,5CD035CSKZ,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,garyedwards,2024-09-30T11:53:09Z,,S-1-5-21-2030993556-1131631915-3534476973-1514
+SMH-ACS,2024-11-15T15:32:30Z,2024-04-22T15:54:13Z,Windows,Windows 10,19044,Windows 10 IoT Enterprise LTSC 2021,10.0.19044.5129,AXIS S1232 Rack 16 TB,Axis Communications,Workstation,Invalid Chassis Type,2024-11-14T01:55:05Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:20 UTC",No policy,"platform_default
+24 Oct 24 00:24 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:34 UTC",No policy,No policy,2cca9d7b1b83484092565170c65457d5,10.5.3.2,10.5.3.2,10.5.3.1,104.219.185.179,,6c-3c-8c-67-25-ba,6c-3c-8c-67-25-ba,,normal,657009,3121PW3,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,SMH,2024-11-14T19:35:16Z,,S-1-5-21-1425378107-614847437-1840568759-1002
+SMH-L187,2024-11-15T15:38:42Z,2023-10-08T18:55:37Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-15T15:01:06Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:19 UTC",No policy,"platform_default
+24 Oct 24 14:22 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:37 UTC",No policy,No policy,b2a03e6efbef43b889ea91d42f613777,192.168.41.2,192.168.41.2,192.168.41.1,98.175.35.124,schubermitchell.com,00-42-38-e8-55-80,00-42-38-e8-55-80,,normal,526017,5CD10253M9,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,bharrelson,2024-11-08T15:16:41Z,,S-1-5-21-2030993556-1131631915-3534476973-1233
+SMH-L203,2024-11-15T15:14:30Z,2024-07-22T20:29:21Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4317,HP ZBook Fury 16 G9 Mobile Workstation PC,HP,Workstation,Laptop,2024-11-15T14:14:49Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:25 UTC",No policy,"platform_default
+24 Oct 24 13:18 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:29 UTC",No policy,No policy,b9fdef86a4dc4e6f982696f1ac77b44f,192.168.137.1,172.16.102.40,172.16.102.1,72.196.88.162,schubermitchell.com,0a-9d-f4-91-d4-8a,ca-ed-07-87-f2-8b,,normal,591474,5CG31908X3,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jduersch,2024-11-15T14:16:38Z,,S-1-5-21-2030993556-1131631915-3534476973-1464
+SMH-D004,2024-11-15T15:47:41Z,2024-01-11T18:22:43Z,Windows,Windows 10,19045,Windows 10 IoT Enterprise,10.0.19045.5007,NUC11TNKi5,Intel(R) Client Systems,Workstation,Desktop,2024-11-15T08:32:58Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:24 UTC",No policy,"platform_default
+24 Oct 24 00:06 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:43 UTC",No policy,No policy,f062deb43629409387d000eb2d1b1eaa,192.168.0.134,192.168.0.134,192.168.0.1,104.219.185.179,,48-21-0b-51-bb-67,48-21-0b-51-bb-67,,normal,526017,BTTN250009GX,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Skype,2024-10-24T07:34:09Z,,S-1-5-21-2317704496-188406739-422647478-1001
+SMH-L237,2024-11-15T15:35:50Z,2024-09-05T15:52:44Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 440 14 inch G11 Notebook PC,HP,Workstation,Laptop,2024-11-06T14:04:24Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:19 UTC",No policy,"platform_default
+23 Oct 24 23:36 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+05 Sep 24 16:00 UTC",No policy,No policy,e48617a092824b5ab9e504bc16b1b03b,172.16.102.7,172.16.102.7,172.16.102.1,72.196.88.162,schubermitchell.com,2c-7b-a0-9a-cd-1a,22-98-ec-16-cd-d9,,normal,657060,5CD4249KVQ,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,sjohnson,2024-10-28T13:24:31Z,,S-1-5-21-2030993556-1131631915-3534476973-1326
+SMH-L192,2024-11-15T15:21:28Z,2023-10-06T20:24:39Z,Windows,Windows 11,26100,Windows 11 Pro,10.0.26100.2033,HP ZBook Power G7 Mobile Workstation,HP,Workstation,Laptop,2024-10-30T07:23:18Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+25 Oct 24 17:48 UTC",No policy,"platform_default
+25 Oct 24 17:48 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:40 UTC",No policy,No policy,1192cfcf207245dcb60034cc073610b9,172.16.100.34,172.16.100.34,172.16.100.1,104.219.185.179,schubermitchell.com,80-45-dd-a7-8f-64,80-45-dd-a7-8f-64,,normal,656978,5CD1203SYQ,7.17.18721.0,,,,,,,,,yes,,,,,,,,,,,,,,,Windows - Workstations,nschultz,2024-09-17T13:08:47Z,,S-1-5-21-2030993556-1131631915-3534476973-1208
+SMH-L143,2024-11-14T22:53:49Z,2023-10-09T13:44:41Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ZBook Power G7 Mobile Workstation,HP,Workstation,Laptop,2024-11-11T17:09:35Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:26 UTC",No policy,"platform_default
+24 Oct 24 13:28 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:35 UTC",No policy,No policy,d558afe8a2df4b8898c3c16b50e83514,192.168.0.157,192.168.0.157,192.168.0.1,104.219.185.179,schubermitchell.com,b0-22-7a-d3-b6-63,b0-22-7a-d3-b6-63,,normal,656978,5CD119671W,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,cocull,2024-11-13T16:48:18Z,,S-1-5-21-2030993556-1131631915-3534476973-1219
+SMH-L270,2024-11-15T15:23:40Z,2024-09-27T17:23:35Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4317,20VE,LENOVO,Workstation,Laptop,2024-11-12T16:07:48Z,DefaultNewWorkstations,Default-First-Site-Name,"Production Prevent - Phase 3
+25 Oct 24 15:26 UTC",No policy,"platform_default
+25 Oct 24 15:26 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 17:29 UTC",No policy,No policy,22bce2f697cd4f1987dd325b0386ad7a,172.16.100.163,172.16.100.163,172.16.100.1,104.219.185.179,schubermitchell.com,70-a8-d3-66-1d-63,70-a8-d3-66-1d-63,,normal,526017,MP28Q9DG,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,SMHADMIN,2024-11-11T22:34:58Z,,S-1-5-21-80544031-2522446457-2901966925-1005
+SMH-L287,2024-11-15T15:20:44Z,2024-11-12T16:38:58Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4455,HP ProBook 460 16 inch G11 Notebook PC,HP,Workstation,Laptop,2024-11-13T04:58:32Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+12 Nov 24 16:52 UTC",No policy,"platform_default
+12 Nov 24 16:56 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+12 Nov 24 16:41 UTC",No policy,No policy,647ed1b381de4135bbb02274d6da0213,172.16.100.244,172.16.100.244,172.16.100.1,104.219.185.179,schubermitchell.com,2c-7b-a0-6a-f3-38,2c-7b-a0-6a-f3-38,,normal,657060,5CD4257Z3V,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,,,,
+SMH-L266,2024-11-15T15:40:09Z,2024-09-27T17:22:33Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4317,Surface Pro 9,Microsoft Corporation,Workstation,Laptop,2024-10-24T13:38:48Z,,,"Production Prevent - Phase 3
+18 Oct 24 16:57 UTC",No policy,"platform_default
+24 Oct 24 13:59 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 17:26 UTC",No policy,No policy,28e3e453ff25476c8e7047ac2798bd38,172.20.10.3,172.20.10.3,172.20.10.1,174.210.7.123,,54-6c-eb-62-0a-b6,e8-f4-08-30-bd-df,,normal,591524,0F01JD222303BF,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Brady McAnarney,2024-10-29T16:07:37Z,,S-1-5-21-1555707653-44731814-4051276743-1002
+SMH-L284.local,2024-11-15T15:43:16Z,2024-10-04T20:00:27Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac15,12",Apple Inc.,Workstation,Other,,"Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 16:20 UTC",No policy,"platform_default
+16 Oct 24 23:23 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+04 Oct 24 20:02 UTC",No policy,No policy,331800fe32464115909402f997b3e62c,192.168.0.112,35.162.239.174,,104.219.185.179,SMH,e8-ea-6a-4d-92-dd,,,normal,4294967295,L0V4YN3TX1,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,mmcelwee,2024-11-13T22:13:41Z,1974826927,S-1-5-21-2030993556-1131631915-3534476973-2904
+SMH-L232,2024-11-15T15:30:28Z,2024-07-23T20:08:48Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 450 15.6 inch G10 Notebook PC,HP,Workstation,Laptop,2024-10-30T07:05:23Z,"Workstations, Joplin",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:27 UTC",No policy,"platform_default
+24 Oct 24 00:33 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:51 UTC",No policy,No policy,06195da24e0a45f2b348fa97d54fc31d,192.168.3.102,192.168.3.102,192.168.3.1,172.59.224.159,schubermitchell.com,d0-ad-08-3a-d3-72,d0-ad-08-3a-d3-72,,normal,722595,5CD346F7KF,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,cmarple,2024-10-30T13:07:40Z,,S-1-5-21-2030993556-1131631915-3534476973-2830
+SMH-L191.local,2024-10-30T21:11:10Z,2024-02-22T14:45:00Z,Mac,Sequoia (15),24A348,,24.0.0,"MacBookAir9,1",Apple Inc.,Workstation,Laptop,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+24 Oct 24 20:59 UTC",No policy,"platform_default
+24 Oct 24 21:00 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:23 UTC",No policy,No policy,cda10f27e27d4c858756e22bea93fb8c,172.16.100.224,2600:1f14:2d89:8302:1:2:3:406,,104.219.185.179,,9e-32-95-2d-24-b7,,,normal,460517,FVFDL8X7MNHY,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,dadkins,2024-08-16T12:21:30Z,1457466544,S-1-5-21-2030993556-1131631915-3534476973-2626
+SMH-L221,2024-11-15T14:09:40Z,2023-11-29T22:15:24Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 450 15.6 inch G10 Notebook PC,HP,Workstation,Laptop,2024-11-13T14:00:09Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+21 Oct 24 15:13 UTC",No policy,"platform_default
+24 Oct 24 11:25 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:22 UTC",No policy,No policy,3980cbe267b145d1b37b0d9164b4dfdd,192.168.0.103,192.168.0.103,192.168.0.1,104.219.185.179,schubermitchell.com,0c-37-96-63-19-d3,0c-37-96-63-19-d3,,normal,722595,5CD3434K5C,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,eslohoda,2024-11-06T13:54:11Z,,S-1-5-21-2030993556-1131631915-3534476973-1545
+LDG-L006,2024-11-14T09:01:05Z,2023-09-28T22:12:14Z,Windows,Windows 11,26100,Windows 11 Pro,10.0.26100.2033,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-10-30T07:30:03Z,"Workstations, LDG Companies LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+25 Oct 24 18:05 UTC",No policy,"platform_default
+25 Oct 24 18:05 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+09 Aug 24 12:44 UTC",No policy,No policy,31983bc90d594630af524a84f91fcc59,172.16.100.250,172.16.100.250,172.16.100.1,104.219.185.179,schubermitchell.com,fc-b3-bc-3a-78-89,fc-b3-bc-3a-78-89,,normal,526017,5CD114G94F,7.17.18721.0,,,,,,,,,yes,,,,,,,,,,,,,,,Windows - Workstations,jhackett,2024-09-16T12:38:09Z,,S-1-5-21-2030993556-1131631915-3534476973-2664
+SMH-L251,2024-11-14T23:10:49Z,2024-10-01T18:10:11Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4317,Surface Pro 7,Microsoft Corporation,Workstation,Laptop,2024-11-04T12:35:10Z,,,"Production Prevent - Phase 3
+21 Oct 24 13:06 UTC",No policy,"platform_default
+25 Oct 24 16:47 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+01 Oct 24 18:14 UTC",No policy,No policy,b604ca452cfb4f16bd6f252e5a133e38,172.20.10.2,2600:1700:99a0:82d0:4c7b:7b76:1843:f354,fe80:0:0:0:fa9b:6eff:fe2f:3982,174.210.4.135,,c0-3c-59-9b-42-5e,c0-3c-59-9b-42-5e,,normal,460517,029216111353,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,14179,2024-11-04T12:36:34Z,,S-1-5-21-1513276079-3798710168-104809236-1001
+SMH-L248,2024-11-13T09:58:43Z,2024-09-27T20:38:57Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4169,Surface Pro X,Microsoft Corporation,Workstation,Laptop,2024-10-01T14:01:23Z,,,"Production Prevent - Phase 3
+18 Oct 24 19:47 UTC",No policy,"platform_default
+12 Nov 24 18:10 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 20:42 UTC",No policy,No policy,a179b39123194666b825711ba4acfbce,192.168.137.1,192.168.1.88,192.168.1.254,107.210.101.216,,02-1d-bc-aa-c1-53,f0-1d-bc-aa-c1-53,,normal,4294967295,026020412453,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Kris Dodson,2024-11-12T16:53:07Z,,S-1-5-21-1908745112-2229065259-2154357808-1002
+SMH-L75,2024-11-14T22:44:42Z,2024-01-11T20:14:29Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 440 G7,HP,Workstation,Laptop,2024-10-23T18:17:19Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 17:36 UTC",No policy,"platform_default
+24 Oct 24 14:43 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+09 Aug 24 13:37 UTC",No policy,No policy,c065b968cdd44cb59b823f06c0d86070,192.168.0.166,172.16.100.157,172.16.100.1,104.219.185.179,schubermitchell.com,ac-00-f9-02-68-8e,70-66-55-ca-a5-83,,normal,526060,5CD0242460,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,thayes,2024-09-13T19:22:36Z,,S-1-5-21-2030993556-1131631915-3534476973-2728
+SMH-L179,2024-11-15T15:36:02Z,2023-10-09T13:46:10Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-14T21:13:53Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:22 UTC",No policy,"platform_default
+24 Oct 24 13:17 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:25 UTC",No policy,No policy,6848406f82de4e40a0f7a5ec2c266860,172.16.100.188,172.16.100.188,172.16.100.1,72.24.144.18,schubermitchell.com,64-79-f0-73-13-9c,64-79-f0-73-13-9c,,normal,526017,5CD1400VS5,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,ssmith,2024-10-18T19:45:40Z,,S-1-5-21-2030993556-1131631915-3534476973-1193
+SMH-L236,2024-11-15T15:39:45Z,2024-09-04T22:37:57Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 460 16 inch G11 Notebook PC,HP,Workstation,Laptop,2024-10-30T07:04:20Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:19 UTC",No policy,"platform_default
+24 Oct 24 00:04 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+04 Sep 24 22:41 UTC",No policy,No policy,aa57010ed8564ca8a751a04b89042587,172.16.100.133,192.168.0.108,192.168.0.1,104.219.185.179,schubermitchell.com,dc-45-46-34-b7-d2,90-8d-6e-1f-18-32,,normal,657060,5CD4208ZGB,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,kgreen,2024-11-11T13:40:21Z,,S-1-5-21-2030993556-1131631915-3534476973-2889
+SMH-L178,2024-11-15T15:10:44Z,2023-10-06T16:55:36Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-11T23:42:03Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:30 UTC",No policy,"platform_default
+24 Oct 24 11:03 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:50 UTC",No policy,No policy,d66bb162b91e4a91a43a19389697c425,172.20.10.2,172.20.10.2,172.20.10.1,104.5.126.148,schubermitchell.com,48-51-c5-4b-a6-1d,48-51-c5-4b-a6-1d,,normal,526017,5CD1526KQ5,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,tgleason,2024-11-11T14:01:57Z,,S-1-5-21-2030993556-1131631915-3534476973-1223
+SMH-L256,2024-11-15T15:26:53Z,2024-09-27T19:08:53Z,Windows,Windows 11,22000,Windows 11 Pro,10.0.22000.2836,HP 250 G8 Notebook PC,HP,Workstation,Laptop,2024-10-21T14:37:00Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:22 UTC",No policy,"platform_default
+24 Oct 24 14:01 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 19:10 UTC",No policy,No policy,2d69c2799602462784b49573cd51d9ba,172.16.106.4,172.16.106.4,172.16.106.1,66.119.22.84,,b4-b5-b6-ae-ef-8d,b4-b5-b6-ae-ef-8d,,normal,526017,CND1401CH7,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,KLawler,2024-11-08T14:13:41Z,,S-1-5-21-3947802968-2653193884-165321821-1004
+LDGC-L228,2024-11-15T15:32:43Z,2024-05-25T09:40:26Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP Pro x360 435 13.3 inch G10 Notebook PC,HP,Workstation,Laptop,2024-11-15T14:04:00Z,"MAC OS, Workstations, Land Development Group LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:54 UTC",No policy,"platform_default
+24 Oct 24 12:34 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+19 Aug 24 14:39 UTC",No policy,No policy,890299ec1de24ba8a008b5323bd4a76f,172.16.201.154,192.168.0.102,192.168.0.1,104.219.185.179,schubermitchell.com,dc-4b-a1-03-71-6e,30-13-8b-e4-ab-af,,normal,10817280,5CG42000K2,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,dmccune,2024-11-12T21:06:36Z,,S-1-5-21-2030993556-1131631915-3534476973-1109
+SMH-L209.local,2024-11-15T15:36:51Z,2024-09-17T13:56:55Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac14,2",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Phase 1 - initial deployment
+18 Oct 24 15:22 UTC",No policy,"platform_default
+17 Oct 24 15:07 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+17 Sep 24 14:19 UTC",No policy,No policy,32dd57ca41724182b0d177c1a777314c,172.16.10.2,100.20.76.137,,72.24.150.2,SMH,86-43-3b-0e-4a-dc,,,normal,4294967295,DHJ46JW2CR,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,mjoyce,2024-11-14T23:20:53Z,1138853421,S-1-5-21-2030993556-1131631915-3534476973-2690
+SMH-L173.local,2024-11-15T14:02:01Z,2024-01-15T18:41:02Z,Mac,Sonoma (14),23H222,,23.6.0,"MacBookAir10,1",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Phase 1 - initial deployment
+18 Oct 24 16:48 UTC",No policy,"platform_default
+17 Oct 24 12:15 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:26 UTC",No policy,No policy,c919adfd80894bfd81262ae1effb9728,172.16.102.39,100.20.76.137,,70.178.140.97,SMH,b0-be-83-3d-0d-ea,,,normal,4294967295,FVHGR87LQ6L4,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,mccabe,2024-11-12T13:22:17Z,1839932086,S-1-5-21-2030993556-1131631915-3534476973-2649
+SMH-L252,2024-11-15T15:27:02Z,2024-09-27T19:09:27Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4455,82YN,LENOVO,Workstation,Laptop,2024-11-14T20:35:31Z,,,"Production Prevent - Phase 3
+25 Oct 24 14:45 UTC",No policy,"platform_default
+25 Oct 24 14:52 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 19:13 UTC",No policy,No policy,a87f4301c0d441d78dc590f697bf14da,192.168.0.129,172.16.100.100,172.16.100.1,104.219.185.179,schubermitchell.com,0c-37-96-04-0e-e1,f0-20-ff-63-55-9c,,normal,722595,YX08YPH0,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,SMHADMIN,2024-10-25T14:43:59Z,,S-1-5-21-2661148078-4233318972-1443562904-1005
+SMH-L129.local,2024-11-15T15:33:06Z,2024-06-21T21:44:26Z,Mac,Sequoia (15),24B83,,24.1.0,"MacBookPro16,2",Apple Inc.,Workstation,Laptop,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 17:37 UTC",No policy,"platform_default
+17 Oct 24 17:47 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:51 UTC",No policy,No policy,e58f2a7409a24bc996c526d18f5f9ec3,172.16.100.176,35.162.239.174,,104.219.185.179,SMH,76-f8-8a-d9-74-1b,,,normal,460517,C02FC4STML85,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,,,,
+SMH-L130,2024-11-15T15:24:39Z,2024-02-08T19:47:48Z,Windows,Windows 11,26100,Windows 11 Pro,10.0.26100.2033,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-11T14:05:14Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:27 UTC",No policy,"platform_default
+30 Oct 24 07:17 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:38 UTC",No policy,No policy,3970340784c4480db7a90cb911b06669,192.168.0.110,192.168.0.110,192.168.0.1,104.219.185.179,schubermitchell.com,ac-00-f9-08-0e-44,ac-00-f9-08-0e-44,,normal,526017,5CD10253QH,7.17.18721.0,,,,,,,,,yes,,,,,,,,,,,,,,,Windows - Workstations,mbettis,2024-11-11T14:06:21Z,,S-1-5-21-2030993556-1131631915-3534476973-2743
+SMH-L212.local,2024-11-15T15:35:16Z,2023-10-18T21:06:49Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac14,2",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Phase 1 - initial deployment
+18 Oct 24 15:21 UTC",No policy,"platform_default
+16 Oct 24 23:23 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:45 UTC",No policy,No policy,6ea7ed94b5024efb96c18bb54de0602d,192.168.1.207,35.162.239.174,,208.101.209.102,SMH,fa-d7-65-3b-04-ce,,,normal,4294967295,X2X9VX5D46,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,sfreelend,2024-09-27T18:40:17Z,1260778717,S-1-5-21-2030993556-1131631915-3534476973-1578
+SMH-L278.local,2024-11-15T14:45:28Z,2024-09-27T19:42:58Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac14,7",Apple Inc.,Workstation,Other,,,,"Phase 1 - initial deployment
+18 Oct 24 15:21 UTC",No policy,"platform_default
+17 Oct 24 16:18 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 19:44 UTC",No policy,No policy,6fed13005faa408e8f4405a38853f9bf,172.16.106.15,100.20.76.137,,76.7.215.19,,4e-a7-b1-fb-57-71,,,normal,4294967295,TGPD4HFM2M,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,jakerichards,2024-09-27T20:09:31Z,502,S-1-5-21-2493732699-2389197890-344223657-2004
+SMH-L254,2024-11-14T21:53:49Z,2024-09-27T19:09:08Z,Windows,Windows 10,19045,Windows 10 Home,10.0.19045.5129,81JS,LENOVO,Workstation,Laptop,2024-11-14T14:34:50Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:26 UTC",No policy,"platform_default
+24 Oct 24 13:12 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 19:12 UTC",No policy,No policy,b73851b70fb04b8283ab87b914dc6bcc,192.168.0.121,192.168.0.121,192.168.0.1,104.219.185.179,,64-c9-01-ba-d0-03,64-c9-01-ba-d0-03,,normal,526059,MP1LBBG0,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Ian Hunter,2024-11-14T16:32:30Z,,S-1-5-21-3627275906-2494317873-2457489142-1005
+SMH-DC01,2024-11-15T15:38:11Z,2023-10-06T23:37:41Z,Windows,Windows Server 2022,20348,Windows Server 2022 Standard,10.0.20348.2760,VMware Virtual Platform,"VMware, Inc.",Domain Controller,Other,2024-10-19T20:56:58Z,Domain Controllers,Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:24 UTC",No policy,"platform_default
+24 Oct 24 00:06 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:34 UTC",No policy,No policy,ad7b8e3c26844a7294c58e1ef1984175,192.168.0.5,192.168.0.5,192.168.0.1,104.219.185.179,schubermitchell.com,00-0c-29-36-82-ba,00-0c-29-36-82-ba,,normal,329303,VMware-56 4d 81 47 01 4f 38 e9-e9 1c 20 bd b4 36 82 ba,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Servers,kalmernd,2024-06-27T21:41:58Z,,S-1-5-21-2030993556-1131631915-3534476973-2722
+SMH-L186,2024-11-15T14:02:39Z,2024-02-09T08:07:42Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 440 G7,HP,Workstation,Laptop,2024-11-15T13:59:36Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:28 UTC",No policy,"platform_default
+24 Oct 24 13:15 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+19 Aug 24 20:09 UTC",No policy,No policy,d8c0200db8bd40f68792b7245ae1f150,192.168.10.2,192.168.10.2,192.168.10.1,172.59.224.159,schubermitchell.com,d8-c0-a6-5e-fa-c7,d8-c0-a6-5e-fa-c7,,normal,526060,5CD034L44T,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,zcarey,2024-11-15T14:02:58Z,,S-1-5-21-2030993556-1131631915-3534476973-2837
+SMH-L164,2024-11-15T15:31:56Z,2023-10-20T16:10:10Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook x360 435 G8 Notebook PC,HP,Workstation,Laptop,2024-11-13T14:42:25Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:19 UTC",No policy,"platform_default
+24 Oct 24 00:09 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:47 UTC",No policy,No policy,1f0e46a126324ff79f64ce9827c7372d,172.16.100.211,172.16.100.211,172.16.100.1,104.219.185.179,schubermitchell.com,cc-6b-1e-98-5b-c1,cc-6b-1e-98-5b-c1,,normal,10817280,5CG136B719,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,aroque,2024-11-13T14:41:36Z,,S-1-5-21-2030993556-1131631915-3534476973-1128
+SMH-L152,2024-11-14T22:54:03Z,2023-10-07T18:38:34Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 440 G8 Notebook PC,HP,Workstation,Laptop,2024-11-06T20:27:19Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 19:11 UTC",No policy,"platform_default
+24 Oct 24 13:26 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:25 UTC",No policy,No policy,4946313bd2874ee5ab7fc8bf52960c75,172.20.10.2,2607:fb90:6d9f:fe:dc00:5bfa:3822:c088,fe80:0:0:0:aedf:9fff:fe70:95ba,172.56.208.70,schubermitchell.com,e8-84-a5-2b-f8-54,e8-84-a5-2b-f8-54,,normal,526017,5CD1324D0Q,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jlittle,2024-11-06T20:39:41Z,,S-1-5-21-2030993556-1131631915-3534476973-1441
+SMH-L257,2024-11-15T15:49:00Z,2024-09-27T17:23:29Z,Windows,Windows 11,22621,Windows 11 Home,10.0.22621.4317,82YN,LENOVO,Workstation,Laptop,2024-10-18T15:04:58Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:19 UTC",No policy,"platform_default
+28 Oct 24 16:44 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 17:26 UTC",No policy,No policy,46e7fdeb3b7846db9af5dd8e2ad4c1f7,192.168.1.84,2600:1702:2a20:21a0:8d02:f79d:1bb6:605,fe80:0:0:0:1655:b9ff:fe07:32e2,162.230.100.144,,64-49-7d-18-ee-6c,64-49-7d-18-ee-6c,,normal,722595,YX064TQ7,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Kristy Ilgenfritz,2024-11-08T16:24:15Z,,S-1-5-21-4142307344-838477858-2461804786-1003
+SMH-L194,2024-11-15T15:23:25Z,2023-10-06T19:53:08Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook x360 435 G8 Notebook PC,HP,Workstation,Laptop,2024-11-15T14:18:00Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:19 UTC",No policy,"platform_default
+24 Oct 24 00:33 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:38 UTC",No policy,No policy,aec30c770082477b83026504eef867c6,192.168.0.138,192.168.0.138,192.168.0.1,104.219.185.179,schubermitchell.com,9c-eb-e8-92-2a-c3,9c-eb-e8-92-2a-c3,,normal,10817280,5CG136B721,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,nherndon,2024-11-15T14:19:31Z,,S-1-5-21-2030993556-1131631915-3534476973-1232
+SMH-L240,2024-11-15T15:40:43Z,2024-09-09T16:23:20Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 440 14 inch G11 Notebook PC,HP,Workstation,Laptop,2024-11-15T15:02:37Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+24 Oct 24 20:59 UTC",No policy,"platform_default
+24 Oct 24 21:02 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+09 Sep 24 16:27 UTC",No policy,No policy,e935f5559ba743669bc056e7c7638b1a,172.20.10.4,172.20.10.4,172.20.10.1,108.147.176.115,schubermitchell.com,dc-45-46-39-19-d0,dc-45-46-39-19-d0,,normal,657060,5CD42089JY,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jcleaver,2024-11-15T15:04:07Z,,S-1-5-21-2030993556-1131631915-3534476973-2882
+SMH-L185,2024-11-15T15:38:11Z,2023-10-06T16:52:39Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.4780,HP ProBook 440 G7,HP,Workstation,Laptop,2024-09-18T08:16:45Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:25 UTC",No policy,"platform_default
+24 Oct 24 13:23 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+12 Aug 24 13:30 UTC",No policy,No policy,c8b0b550aba4438092781fb06873cab8,172.16.102.41,172.16.102.41,172.16.102.1,70.178.241.74,schubermitchell.com,d8-c0-a6-70-ac-5b,d8-c0-a6-70-ac-5b,,normal,526060,5CD035CSL6,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,mberry,2024-09-30T15:55:26Z,,S-1-5-21-2030993556-1131631915-3534476973-1200
+SMH-L214.local,2024-11-15T15:25:08Z,2024-06-03T20:35:40Z,Mac,Sequoia (15),24A348,,24.0.0,"Mac14,2",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Phase 1 - initial deployment
+18 Oct 24 18:36 UTC",No policy,"platform_default
+17 Oct 24 13:02 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 22:15 UTC",No policy,No policy,0859332beb524bb7a7cec2ef184e1a14,172.20.10.10,100.20.76.137,,174.202.169.229,SMH,16-84-04-b9-a8-72,,,normal,4294967295,FY7QJG61J1,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,ascutti,2024-07-22T14:56:52Z,32099638,S-1-5-21-2030993556-1131631915-3534476973-1447
+SMH-L120,2024-11-13T19:04:21Z,2023-10-06T20:26:10Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,Surface Book 3,Microsoft Corporation,Workstation,Laptop,2024-11-03T17:23:17Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:31 UTC",No policy,"platform_default
+24 Oct 24 00:08 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+09 Aug 24 20:46 UTC",No policy,No policy,e71c9b4cebc3448f9f87c4552fc92bc4,192.168.0.133,192.168.0.133,192.168.0.1,104.219.185.179,schubermitchell.com,b8-31-b5-45-a2-bb,b8-31-b5-45-a2-bb,,normal,460517,012758510457,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jharris,2024-11-04T17:31:50Z,,S-1-5-21-2030993556-1131631915-3534476973-1158
+SMH-L140,2024-11-15T15:39:15Z,2023-10-06T15:40:44Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-15T13:43:38Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:33 UTC",No policy,"platform_default
+24 Oct 24 13:19 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 22:01 UTC",No policy,No policy,6e34eaeced51448aa5bd4b9594614d2a,192.168.4.55,192.168.4.55,192.168.4.1,173.47.122.144,schubermitchell.com,d8-f8-83-c2-dc-ce,d8-f8-83-c2-dc-ce,,normal,526017,5CD106J9CC,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,akurtz,2024-11-14T12:15:13Z,,S-1-5-21-2030993556-1131631915-3534476973-1472
+SMH-L169,2024-11-15T15:32:13Z,2023-10-06T23:37:55Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-10-30T07:11:01Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:53 UTC",No policy,"platform_default
+24 Oct 24 04:09 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:35 UTC",No policy,No policy,a2260f7dfe9a486b937e8dc61ab97462,192.168.4.50,192.168.4.50,192.168.4.1,50.80.248.209,schubermitchell.com,40-1c-83-a2-b0-52,40-1c-83-a2-b0-52,,normal,526017,5CD1316802,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,iavila,2024-02-28T16:44:22Z,,S-1-5-21-2030993556-1131631915-3534476973-2704
+SMH-L172,2024-11-15T15:39:02Z,2023-10-09T13:45:06Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-11T16:50:26Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+21 Oct 24 14:06 UTC",No policy,"platform_default
+24 Oct 24 14:03 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+09 Aug 24 02:16 UTC",No policy,No policy,2589ec36705a4539b056e81d5bc2a856,192.168.0.115,2607:fb90:bf0d:914a:4945:5c7:cd2b:32b,fe80:0:0:0:2a74:f5ff:fe01:ca33,104.219.185.179,schubermitchell.com,50-81-40-86-0c-5b,40-1c-83-a2-b0-2a,,normal,526017,5CD1316806,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,cwatson,2024-11-13T14:49:07Z,,S-1-5-21-2030993556-1131631915-3534476973-2609
+SMH-L235.local,2024-11-15T15:28:52Z,2024-08-20T18:22:46Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac15,12",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 15:41 UTC",No policy,"platform_default
+17 Oct 24 19:24 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+20 Aug 24 18:27 UTC",No policy,No policy,3385ab27ae4448f48ab32b76793fd71c,172.16.102.28,2600:1f14:2d89:8301:1:2:3:406,,72.196.88.162,SMH,52-91-73-26-0a-aa,,,normal,4294967295,GD4JPC41P9,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,jsampson,2024-09-10T15:03:53Z,769922238,S-1-5-21-2030993556-1131631915-3534476973-2891
+SMH-L107.local,2024-11-07T20:37:31Z,2023-12-08T21:05:53Z,Mac,Sequoia (15),24B83,,24.1.0,"MacBookPro16,2",Apple Inc.,Workstation,Laptop,,"MAC OSX, Workstations, Joplin",Default-First-Site-Name,"Phase 1 - initial deployment
+18 Oct 24 15:33 UTC",No policy,"platform_default
+17 Oct 24 15:09 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:34 UTC",No policy,No policy,61bd95ac54e74c6ca972c9eea4460bb5,192.168.40.99,35.162.239.174,,2603:a060:11e4:0:882a:3e17:67e8:3856,,f2-7a-6f-2e-77-73,,,normal,460517,C02DQ4YVML85,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,cmccone,2024-07-31T13:26:52Z,2130157276,S-1-5-21-2030993556-1131631915-3534476973-2707
+SMH-L119,2024-11-15T15:32:12Z,2023-10-06T16:52:28Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,Surface Book 3,Microsoft Corporation,Workstation,Laptop,2024-11-15T13:25:56Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+21 Oct 24 18:21 UTC",No policy,"platform_default
+25 Oct 24 13:25 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+12 Aug 24 20:30 UTC",No policy,No policy,bd70c9a483ad4fe19ea3255b58e680b9,172.16.108.7,172.16.108.7,172.16.108.1,72.222.76.173,schubermitchell.com,64-bc-58-8a-3f-ae,64-bc-58-8a-3f-ae,,normal,460517,007314610457,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,oantillon,2024-10-08T13:08:43Z,,S-1-5-21-2030993556-1131631915-3534476973-1110
+SMH-L165,2024-11-15T15:40:55Z,2023-10-09T13:46:23Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook x360 435 G8 Notebook PC,HP,Workstation,Laptop,2024-11-13T19:35:19Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 18:38 UTC",No policy,"platform_default
+24 Oct 24 00:57 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 20:00 UTC",No policy,No policy,6d69991c6472419ea4457fe0b6d9fb2d,192.168.1.21,192.168.1.21,192.168.1.1,47.214.245.45,schubermitchell.com,cc-6b-1e-98-5b-cf,cc-6b-1e-98-5b-cf,,normal,10817280,5CG136B71M,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,bwilson,2024-11-13T19:36:44Z,,S-1-5-21-2030993556-1131631915-3534476973-1205
+SMH-L68,2024-11-15T15:29:20Z,2023-10-06T16:52:52Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ZBook 15 G6,HP,Workstation,Laptop,2024-11-08T17:36:12Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:25 UTC",No policy,"platform_default
+24 Oct 24 13:26 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:35 UTC",No policy,No policy,8b264b42278044b883a54eed31ee13ca,172.16.100.80,172.16.100.80,172.16.100.1,104.219.185.179,schubermitchell.com,74-d8-3e-ec-3f-47,74-d8-3e-ec-3f-47,,normal,591594,5CD0234FRL,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,osarceno,2024-11-14T13:37:44Z,,S-1-5-21-2030993556-1131631915-3534476973-1187
+SMH-L158.local,2024-11-15T13:53:27Z,2024-01-25T16:28:56Z,Mac,Sequoia (15),24B83,,24.1.0,"MacBookAir10,1",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 20:40 UTC",No policy,"platform_default
+17 Oct 24 14:10 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 22:25 UTC",No policy,No policy,23dce202a2b74effbe7617025033408d,172.16.106.6,35.162.239.174,,199.247.145.4,SMH,ca-ed-07-87-f2-8b,,,normal,4294967295,C02DQVPNQ6L4,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,nvacca,2024-05-30T18:11:47Z,1863479850,S-1-5-21-2030993556-1131631915-3534476973-2724
+SMH-L124,2024-11-15T15:17:53Z,2023-10-06T16:30:37Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 440 G7,HP,Workstation,Laptop,2024-11-15T13:40:48Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:31 UTC",No policy,"platform_default
+24 Oct 24 12:47 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+12 Aug 24 12:08 UTC",No policy,No policy,c71e1fa072214a86a8869ebe6f1b55cb,192.168.0.127,172.16.100.68,172.16.100.1,104.219.185.179,schubermitchell.com,f8-0d-ac-32-bb-fd,d8-f8-83-d2-96-aa,,normal,526060,5CD044CB52,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,tnobis,2024-11-08T13:28:50Z,,S-1-5-21-2030993556-1131631915-3534476973-1167
+LDG-L010,2024-10-11T20:32:50Z,2023-11-29T18:57:47Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP Pro x360 435 13.3 inch G10 Notebook PC,HP,Workstation,Laptop,2024-09-23T19:18:36Z,"Workstations, LDG Project Management LLC",Default-First-Site-Name,"Production Prevent - Phase 2
+30 Jul 24 12:52 UTC",No policy,"platform_default
+03 Oct 24 13:12 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:38 UTC",No policy,No policy,7636ce803969486a93d508f1b2c316e0,172.16.100.3,192.168.0.105,192.168.0.1,104.219.185.179,schubermitchell.com,40-1a-58-cc-c4-a1,d0-ad-08-08-44-a8,,normal,10817280,5CG343066W,7.16.18613.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jchastain,2023-11-30T17:49:35Z,,
+SMH-L83,2024-11-15T15:33:05Z,2023-10-06T16:53:34Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 440 G7,HP,Workstation,Laptop,2024-10-16T07:23:46Z,"Workstations, LDG Project Management LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:29 UTC",No policy,"platform_default
+24 Oct 24 00:14 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:34 UTC",No policy,No policy,4b2f490eafce4c8fb97583e3027a6354,192.168.0.158,192.168.0.158,192.168.0.1,104.219.185.179,schubermitchell.com,0c-37-96-04-55-4c,0c-37-96-04-55-4c,,normal,526060,5CD024CG1X,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,lchorum,2024-10-16T15:54:54Z,,S-1-5-21-2030993556-1131631915-3534476973-1413
+SMH-L234.local,2024-11-15T15:16:02Z,2024-08-20T18:22:53Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac15,12",Apple Inc.,Workstation,Other,,,,"Phase 1 - initial deployment
+18 Oct 24 15:21 UTC",No policy,"platform_default
+17 Oct 24 00:07 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+20 Aug 24 18:28 UTC",No policy,No policy,27057a7bbd6c41a894052da167ba30c3,172.16.10.4,35.162.239.174,,72.24.150.2,SMH,7a-d0-6a-98-5f-18,,,normal,4294967295,FPKXQJTQV0,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,tvenable,2024-11-05T22:25:33Z,1391816530,S-1-5-21-2030993556-1131631915-3534476973-2700
+SMH-L245.local,2024-11-15T13:10:45Z,2024-09-24T14:05:04Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac15,12",Apple Inc.,Workstation,Other,,"Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 15:28 UTC",No policy,"platform_default
+17 Oct 24 20:47 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+24 Sep 24 14:09 UTC",No policy,No policy,f1ca7556e529432db7ec35a5e472992c,192.168.0.223,2600:1f14:2d89:8301:1:2:3:408,,72.196.88.162,SMH,ce-ea-06-7d-88-55,,,normal,4294967295,HWF7PYL7QV,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,estewart,2024-09-30T13:42:18Z,143584021,S-1-5-21-2030993556-1131631915-3534476973-1449
+SMH-L277,2024-11-13T14:21:12Z,2024-09-27T18:20:15Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4317,Surface Pro 7,Microsoft Corporation,Workstation,Laptop,2024-11-06T14:42:19Z,,,"Production Prevent - Phase 3
+21 Oct 24 12:28 UTC",No policy,"platform_default
+25 Oct 24 17:57 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 18:21 UTC",No policy,No policy,f76d45edb04f41f99680635b2fd947fb,192.168.1.11,192.168.1.11,192.168.1.1,173.17.74.125,,c8-09-a8-12-dd-51,c8-09-a8-12-dd-51,,normal,460517,035322600853,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Joshua Cleaver,2024-11-11T13:39:10Z,,S-1-5-21-394110622-96131702-3055599080-1006
+Kalmer-Test-MacBook-Pro.local,2024-10-31T19:27:50Z,2024-07-30T14:50:14Z,Mac,Ventura (13),22G830,,22.6.0,"MacBookPro14,2",Apple Inc.,Workstation,Laptop,,,,"Phase 1 - initial deployment
+Changes pending",No policy,"platform_default
+Changes pending","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:34 UTC",No policy,No policy,40b3e23b60a14a7bb76602d96f5cecf6,192.168.248.26,,,216.163.8.166,SMH,8c-85-90-68-a8-94,,,normal,526057,C02VKBH5HV2L,7.17.18604.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,ktest,2024-08-30T15:37:29Z,504,S-1-5-21-1650679634-3129101530-495672002-2008
+SMH-L174,2024-11-15T15:34:22Z,2023-10-06T16:29:03Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4317,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-13T14:16:43Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+21 Oct 24 15:13 UTC",No policy,"platform_default
+23 Oct 24 23:34 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:41 UTC",No policy,No policy,941098fae57c4890913fbb4c0b275860,192.168.12.110,2607:fb90:6d86:83ae:b515:4c56:76c1:9eba,fe80:0:0:0:aedf:9fff:fe88:bbb2,172.59.224.159,schubermitchell.com,64-79-f0-71-b8-0d,64-79-f0-71-b8-0d,,normal,526017,5CD1395CS5,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,wbeeman,2024-11-13T14:18:51Z,,S-1-5-21-2030993556-1131631915-3534476973-1490
+SMH-L255,2024-11-15T15:40:42Z,2024-09-27T19:09:12Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4455,Surface Pro X,Microsoft Corporation,Workstation,Laptop,2024-11-12T23:33:33Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:19 UTC",No policy,"platform_default
+30 Oct 24 07:10 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 19:11 UTC",No policy,No policy,9339d0458b6e4ee6822084c5a189037c,192.168.50.251,192.168.50.251,192.168.50.1,75.98.110.198,,00-05-1b-5d-bf-27,00-05-1b-5d-bf-27,,normal,4294967295,001169411853,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,invoices,2024-11-14T14:46:25Z,,S-1-5-21-1054610095-464056980-1763646320-1002
+SMH-L123,2024-11-15T15:32:38Z,2024-10-01T16:19:53Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 440 G7,HP,Workstation,Laptop,2024-11-15T14:18:37Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+23 Oct 24 13:38 UTC",No policy,"platform_default
+24 Oct 24 13:25 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+01 Oct 24 16:32 UTC",No policy,No policy,321510bd5563401280218fb67c41ab6c,172.16.100.255,172.16.100.255,172.16.100.1,104.219.185.179,schubermitchell.com,20-4e-f6-51-23-a5,20-4e-f6-51-23-a5,,normal,526060,5CD044C9PV,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,randerson,2024-11-15T14:50:01Z,,S-1-5-21-2030993556-1131631915-3534476973-1507
+SMH-L111,2024-11-15T15:40:01Z,2024-09-16T13:53:37Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ZBook Power G7 Mobile Workstation,HP,Workstation,Laptop,2024-10-23T20:19:20Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 19:48 UTC",No policy,"platform_default
+24 Oct 24 13:33 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+16 Sep 24 13:57 UTC",No policy,No policy,0ebce55f1e5346a2b02aad7f3652eae7,192.168.4.34,192.168.4.30,192.168.4.1,173.25.48.208,schubermitchell.com,30-24-a9-76-05-c1,68-54-5a-44-0a-5c,,normal,656978,5CD0519345,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,nschultz,2024-11-15T14:03:44Z,,S-1-5-21-2030993556-1131631915-3534476973-1208
+SMH-L73,2024-11-15T15:26:53Z,2023-10-06T16:29:05Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 440 G7,HP,Workstation,Laptop,2024-11-01T15:56:45Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:21 UTC",No policy,"platform_default
+23 Oct 24 23:57 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:50 UTC",No policy,No policy,fb0bd6f9bffc4c4096e54071668720f3,192.168.10.3,192.168.10.3,192.168.10.1,172.59.224.159,schubermitchell.com,70-66-55-cb-03-5b,70-66-55-cb-03-5b,,normal,526060,5CD024245Y,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jroberts,2024-10-22T20:17:50Z,,S-1-5-21-2030993556-1131631915-3534476973-2636
+SMH-L190.local,2024-11-15T15:41:58Z,2023-10-06T23:17:43Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac14,2",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Phase 1 - initial deployment
+23 Oct 24 21:34 UTC",No policy,"platform_default
+23 Oct 24 21:39 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:54 UTC",No policy,No policy,48a9c14e0a9c4f8e9f0eb1bfc1055b2d,172.16.100.248,100.20.76.137,,104.219.185.179,SMH,a6-fa-20-1c-94-74,,,normal,4294967295,T267HT4XL4,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,mverharst,2024-10-23T21:39:22Z,884191994,S-1-5-21-2030993556-1131631915-3534476973-1195
+SMH-L104,2024-11-15T15:29:06Z,2023-10-07T00:39:28Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 440 G7,HP,Workstation,Laptop,2024-11-11T13:20:21Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:33 UTC",No policy,"platform_default
+24 Oct 24 00:29 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:37 UTC",No policy,No policy,a5fb25e84c79480080267b965de5b791,172.16.102.12,172.16.102.12,172.16.102.1,72.196.88.162,schubermitchell.com,d8-c0-a6-e5-5d-33,d8-c0-a6-e5-5d-33,,normal,526060,5CD0398P94,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jbragg,2024-11-11T13:22:26Z,,S-1-5-21-2030993556-1131631915-3534476973-1176
+SMH-L217,2024-11-15T15:17:19Z,2023-10-25T17:38:12Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ZBook Power 15.6 inch G10 Mobile Workstation PC,HP,Workstation,Laptop,2024-10-30T12:44:58Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+21 Oct 24 14:11 UTC",No policy,"platform_default
+23 Oct 24 23:56 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:41 UTC",No policy,No policy,dc9d86921ab34251b03d4a350bea0178,10.212.135.100,10.212.135.100,10.212.135.101,216.41.182.64,schubermitchell.com,00-09-0f-aa-00-01,00-09-0f-aa-00-01,,normal,722594,5CD335HW0D,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,,,,
+SMH-L70,2024-11-15T15:24:45Z,2023-10-06T16:52:24Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G7,HP,Workstation,Laptop,2024-10-28T01:22:32Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:20 UTC",No policy,"platform_default
+24 Oct 24 02:50 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:32 UTC",No policy,No policy,c5a5f8c94d274bc4ba42ef4aae06a3fd,192.168.0.114,192.168.0.114,192.168.0.1,104.219.185.179,schubermitchell.com,bc-e9-2f-8f-e1-9a,bc-e9-2f-8f-e1-9a,,normal,526060,5CD0243XWQ,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,keaker,2024-10-07T18:12:56Z,,S-1-5-21-2030993556-1131631915-3534476973-1285
+SMH-L233.local,2024-11-15T15:23:46Z,2024-08-20T18:24:33Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac15,12",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 19:38 UTC",No policy,"platform_default
+17 Oct 24 15:52 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+20 Aug 24 18:26 UTC",No policy,No policy,a08734b796bc4ea19acd831e912abfc7,172.16.108.3,35.162.239.174,,68.170.236.191,SMH,de-05-4b-99-ce-20,,,normal,4294967295,GC9XP7595Q,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,wmetzger,2024-09-17T18:18:12Z,2031506022,S-1-5-21-2030993556-1131631915-3534476973-1534
+SMH-WRKSTN-01,2024-10-31T18:45:56Z,2024-07-11T18:53:59Z,Windows,Windows 11,22621,Windows 11 Pro,10.0.22621.4317,Virtual Machine,Microsoft Corporation,Workstation,Desktop,2024-10-31T16:58:52Z,"Workstations, Joplin",Default-First-Site-Name,"Production Prevent - Phase 3
+30 Oct 24 15:31 UTC",No policy,"platform_default
+30 Oct 24 15:38 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+12 Aug 24 14:44 UTC",No policy,No policy,d0e8b3a94cb74ca5bfa44cde190ad1e7,10.3.1.4,10.3.1.4,10.3.1.1,172.183.116.39,schubermitchell.com,60-45-bd-48-7d-37,60-45-bd-48-7d-37,,normal,8589072,0000-0000-7820-5261-3636-0508-14,7.17.18721.0,,AZURE,197b8f27-267f-4888-b921-3d3b59d8dc24,0ada68b5-6771-4f7e-8640-dcfb1f2d1ae9,RG-SMH-WRKSTN01,,,,no,,,,,,,,,,,,,,,Windows - Workstations,nschultz_hFplX8Z,2024-10-31T17:01:19Z,,S-1-5-21-3283852442-704657243-960752612-1001
+SMH-L280,2024-11-04T15:01:28Z,2024-09-27T17:24:30Z,Windows,Windows 11,26100,Windows 11 Home,10.0.26100.1742,"Microsoft Surface Pro, 11th Edition",Microsoft Corporation,Workstation,Laptop,2024-10-22T13:09:54Z,,,"Production Prevent - Phase 3
+21 Oct 24 13:26 UTC",No policy,"platform_default
+24 Oct 24 00:26 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 17:25 UTC",No policy,No policy,fb0694bfd6bb48db8508d2c64b9fff9f,192.168.1.134,192.168.1.134,192.168.1.1,173.17.74.125,,84-b1-e2-54-72-08,84-b1-e2-54-72-08,,normal,4294967295,0F3F7TJ24113KV,7.17.18721.0,,,,,,,,,yes,,,,,,,,,,,,,,,Windows - Workstations,jrusev,2024-10-29T16:10:13Z,,S-1-5-21-1854843689-499648920-583184587-1004
+SMH-L167,2024-11-15T15:43:53Z,2023-10-18T15:52:13Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.4894,HP ProBook x360 435 G8 Notebook PC,HP,Workstation,Laptop,2024-10-10T21:26:55Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+21 Oct 24 14:20 UTC",No policy,"platform_default
+24 Oct 24 13:36 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:20 UTC",No policy,No policy,4ffad58dbe374355b22b782fa97fdb5d,172.16.182.17,172.16.182.17,172.16.182.1,72.196.88.162,schubermitchell.com,f8-89-d2-16-35-69,f8-89-d2-16-35-69,,normal,10817280,5CG136B71D,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,tmerriott,2024-10-10T21:28:40Z,,S-1-5-21-2030993556-1131631915-3534476973-1529
+SMH-L171,2024-11-15T15:20:15Z,2023-10-06T17:29:13Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ZBook Fury 17.3 inch G8 Mobile Workstation PC,HP,Workstation,Laptop,2024-11-14T14:20:24Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:18 UTC",No policy,"platform_default
+24 Oct 24 00:41 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:35 UTC",No policy,No policy,83c4da7afb4f42aa89d5ddd6264ca01c,192.168.0.106,192.168.0.106,192.168.0.1,104.219.185.179,schubermitchell.com,48-9e-bd-e2-b7-d0,48-9e-bd-e2-b7-d0,,normal,526033,CND1318JY9,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jsmith,2024-11-07T14:03:14Z,,S-1-5-21-2030993556-1131631915-3534476973-1480
+SMH-L238,2024-11-15T15:39:42Z,2024-09-05T21:37:48Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 440 14 inch G11 Notebook PC,HP,Workstation,Laptop,2024-10-30T07:02:02Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:18 UTC",No policy,"platform_default
+24 Oct 24 00:26 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+05 Sep 24 21:41 UTC",No policy,No policy,1889afc763db47d1beb4afeb609a817d,172.16.180.53,172.16.180.53,172.16.180.1,104.219.185.179,schubermitchell.com,2c-7b-a0-d7-97-f9,2c-7b-a0-d7-97-f9,,normal,657060,5CD4249KPD,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,smhadmin,2024-09-05T21:43:43Z,,S-1-5-21-3392482108-2230521243-3999380641-1002
+SMH-L180,2024-11-15T15:21:44Z,2023-10-08T19:08:36Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-15T14:44:08Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 20:15 UTC",No policy,"platform_default
+24 Oct 24 02:14 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+09 Aug 24 15:19 UTC",No policy,No policy,a137479e7f284aee9ae554395c98a922,172.16.10.3,172.16.10.3,172.16.10.1,72.24.150.2,schubermitchell.com,48-51-c5-37-80-61,48-51-c5-37-80-61,,normal,526017,5CD1526KZS,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,bhansen,2024-11-15T14:45:47Z,,S-1-5-21-2030993556-1131631915-3534476973-1179
+SMH-L271,2024-11-15T15:18:33Z,2024-09-27T17:22:57Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4111,20VE,LENOVO,Workstation,Laptop,2024-09-30T14:07:56Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:22 UTC",No policy,"platform_default
+25 Oct 24 13:44 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 17:29 UTC",No policy,No policy,fa9c624f97314ee1afb39af636cece0f,172.16.106.17,172.16.106.17,172.16.106.1,66.119.22.84,,70-a8-d3-04-e7-69,70-a8-d3-04-e7-69,,normal,526017,MP28KVGD,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Kyle Marquad,2024-11-15T15:18:35Z,,S-1-5-21-1866330364-3057740763-1587052485-1003
+SMH-L243.local,2024-11-15T15:42:24Z,2024-09-17T16:40:22Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac15,12",Apple Inc.,Workstation,Other,,"Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 16:07 UTC",No policy,"platform_default
+17 Oct 24 00:08 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+17 Sep 24 16:44 UTC",No policy,No policy,5d258962880c4f16b58c0033cb6e60fd,192.168.1.94,35.162.224.228,,199.247.150.134,SMH,da-f7-af-3a-48-0d,,,normal,4294967295,J9K7PY9P0K,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,sgiddens,2024-10-29T13:14:13Z,503419873,S-1-5-21-2030993556-1131631915-3534476973-1135
+SMH-L163,2024-11-15T15:33:57Z,2024-01-26T00:35:07Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4317,HP ProBook x360 435 G8 Notebook PC,HP,Workstation,Laptop,2024-11-06T14:15:50Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:19 UTC",No policy,"platform_default
+24 Oct 24 13:33 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 20:58 UTC",No policy,No policy,9093722e7db74333bcd81c1866964f72,192.168.0.154,172.16.100.7,172.16.100.1,104.219.185.179,schubermitchell.com,ac-00-f9-02-2b-d0,cc-6b-1e-98-58-d5,,normal,10817280,5CG136B72L,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,choward,2024-11-06T14:18:21Z,,S-1-5-21-2030993556-1131631915-3534476973-2749
+SMH-L218,2024-11-15T15:20:29Z,2023-10-19T21:27:14Z,Windows,Windows 11,26100,Windows 11 Pro,10.0.26100.2033,HP ProBook 450 15.6 inch G10 Notebook PC,HP,Workstation,Laptop,2024-11-08T14:30:36Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:18 UTC",No policy,"platform_default
+24 Oct 24 13:25 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:35 UTC",No policy,No policy,22d77edd3f3f4c96aa625746c66ad7fd,192.168.0.111,172.16.100.132,172.16.100.1,104.219.185.179,schubermitchell.com,ac-00-f9-02-0c-a0,74-13-ea-26-ba-f1,,normal,722595,5CD3353WTN,7.17.18721.0,,,,,,,,,yes,,,,,,,,,,,,,,,Windows - Workstations,mbettis2,2024-11-15T15:20:08Z,,S-1-5-21-2030993556-1131631915-3534476973-2745
+LDGC-L242,2024-11-14T13:07:58Z,2024-09-13T17:53:38Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 440 14 inch G11 Notebook PC,HP,Workstation,Laptop,2024-10-30T11:29:21Z,DefaultNewWorkstations,Default-First-Site-Name,"Production Prevent - Phase 3
+22 Oct 24 12:02 UTC",No policy,"platform_default
+24 Oct 24 11:57 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+13 Sep 24 17:57 UTC",No policy,No policy,f161237011044f019e4e27f56aa5d04d,172.16.102.4,172.16.102.4,172.16.102.1,72.196.88.162,schubermitchell.com,2c-7b-a0-9a-c6-1c,2c-7b-a0-9a-c6-1c,,normal,657060,5CD4249KW2,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,smorris,2024-10-30T11:30:46Z,,S-1-5-21-2030993556-1131631915-3534476973-2896
+SMH-L244.local,2024-11-15T14:59:35Z,2024-09-17T16:45:55Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac15,12",Apple Inc.,Workstation,Other,,,,"Phase 1 - initial deployment
+18 Oct 24 15:26 UTC",No policy,"platform_default
+18 Oct 24 14:08 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+17 Sep 24 16:47 UTC",No policy,No policy,5569d92fa5f34e08af89ca929bb64692,172.16.208.8,2600:1f14:2d89:8303:1:2:3:408,,72.222.76.173,SMH,ce-c0-64-c9-3a-10,,,normal,4294967295,D342X0V79R,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,cstowers,2024-09-24T12:34:16Z,2042332582,S-1-5-21-2030993556-1131631915-3534476973-2900
+SMH-L216,2024-11-15T15:26:20Z,2023-10-18T17:08:19Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4317,HP ZBook Fury 16 G10 Mobile Workstation PC,HP,Workstation,Laptop,2024-11-15T14:08:43Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:25 UTC",No policy,"platform_default
+24 Oct 24 13:18 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:26 UTC",No policy,No policy,209c4dedcf32498caf4123f7ba9e799e,172.16.100.226,192.168.0.105,192.168.0.1,104.219.185.179,schubermitchell.com,f4-3b-d8-ee-90-df,64-4e-d7-4b-98-f7,No,normal,722545,5CG3333PT3,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,nfry,2024-11-14T14:23:16Z,,S-1-5-21-2030993556-1131631915-3534476973-2666
+SMH-L160,2024-11-14T22:15:27Z,2024-07-24T18:55:57Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook x360 435 G8 Notebook PC,HP,Workstation,Laptop,2024-11-13T12:49:16Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 18:49 UTC",No policy,"platform_default
+24 Oct 24 11:58 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+19 Aug 24 17:55 UTC",No policy,No policy,640f6751d4574169a6ea031f4eba9d19,192.168.1.156,192.168.1.156,192.168.1.1,72.196.88.162,schubermitchell.com,cc-6b-1e-98-5c-93,cc-6b-1e-98-5c-93,,normal,10817280,5CG136B717,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,cbooth,2024-11-13T12:50:21Z,,S-1-5-21-2030993556-1131631915-3534476973-2612
+SMH-L202,2024-10-04T00:34:27Z,2023-10-06T16:54:08Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.4894,HP ProBook 450 15.6 inch G9 Notebook PC,HP,Workstation,Laptop,2024-10-03T02:10:40Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 2
+22 Jul 24 13:55 UTC",No policy,"platform_default
+Changes pending","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:47 UTC",No policy,No policy,0f63b7b704794aa2886b80487d0f7576,192.168.1.126,192.168.1.126,192.168.1.1,104.219.185.179,schubermitchell.com,10-68-38-e7-7a-44,10-68-38-e7-7a-44,,normal,591524,5CD3169CMY,7.15.18514.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,lmcgriff,2024-09-27T14:06:23Z,,S-1-5-21-2030993556-1131631915-3534476973-2616
+SMH-L285,2024-11-14T19:16:58Z,2024-06-25T19:38:13Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,Surface Laptop 5,Microsoft Corporation,Workstation,Laptop,2024-11-14T15:59:23Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:29 UTC",No policy,"platform_default
+24 Oct 24 14:37 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+09 Aug 24 18:25 UTC",No policy,No policy,a7694a1c4afd406d8fbae392da8e1e5d,192.168.41.3,192.168.41.3,192.168.41.1,98.175.35.124,schubermitchell.com,10-91-d1-41-90-8d,10-91-d1-41-90-8d,,normal,591524,0F3D37B24113FB,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,dschuber,2024-10-25T15:30:20Z,,S-1-5-21-2030993556-1131631915-3534476973-1119
+SMH-L281,2024-11-15T14:06:51Z,2024-09-27T18:21:19Z,Windows,Windows 11,22000,Windows 11 Pro,10.0.22000.2538,Surface Pro 7,Microsoft Corporation,Workstation,Laptop,2024-11-08T16:38:28Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:32 UTC",No policy,"platform_default
+24 Oct 24 18:01 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 18:25 UTC",No policy,No policy,ef6a7639207048a782d99341242c4f7d,172.16.100.182,172.16.100.182,172.16.100.1,104.219.185.179,schubermitchell.com,cc-d9-ac-7e-d4-8e,cc-d9-ac-7e-d4-8e,,normal,460517,002481603053,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,smhadmin,2024-10-18T14:48:49Z,,S-1-5-21-896985520-3097311070-3002774055-1010
+SMH-L95,2024-11-14T22:32:53Z,2023-10-06T16:54:05Z,Windows,Windows 11,26100,Windows 11 Pro,10.0.26100.2033,HP ProBook 450 G7,HP,Workstation,Laptop,2024-11-14T16:57:00Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 17:02 UTC",No policy,"platform_default
+29 Oct 24 18:14 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:23 UTC",No policy,No policy,d1788fb5b83a4d8590a0e7cf146919d5,172.16.100.251,172.16.100.251,172.16.100.1,104.219.185.179,schubermitchell.com,d8-c0-a6-70-cc-c9,d8-c0-a6-70-cc-c9,,normal,526060,5CD0352T96,7.17.18721.0,,,,,,,,,yes,,,,,,,,,,,,,,,Windows - Workstations,bshaw,2024-11-14T17:01:24Z,,S-1-5-21-2030993556-1131631915-3534476973-2910
+SMH-L286,2024-11-12T14:58:09Z,2024-10-24T04:18:55Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4317,82BJ,LENOVO,Workstation,Laptop,2024-11-11T22:34:33Z,DefaultNewWorkstations,Default-First-Site-Name,"Production Prevent - Phase 3
+24 Oct 24 16:54 UTC",No policy,"platform_default
+24 Oct 24 16:57 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+24 Oct 24 04:20 UTC",No policy,No policy,9f57899c47fc405f84487b1269797e8a,172.16.100.53,172.16.100.53,172.16.100.1,104.219.185.179,schubermitchell.com,80-b6-55-43-7a-9c,80-b6-55-43-7a-9c,,normal,526017,PF32EKF9,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,SMHADMIN,2024-11-11T22:36:08Z,,S-1-5-21-4170745970-1626324489-837784545-1003
+SMH-L279,2024-11-15T15:10:38Z,2024-09-27T18:45:38Z,Windows,Windows 10,19045,Windows 10 Home,10.0.19045.5129,82BH,LENOVO,Workstation,Laptop,2024-11-14T07:42:07Z,,,"Production Prevent - Phase 3
+18 Oct 24 16:58 UTC",No policy,"platform_default
+24 Oct 24 13:28 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 18:47 UTC",No policy,No policy,26e6d209845f4c63bf35aca471b95919,192.168.0.192,192.168.0.192,192.168.0.1,75.243.22.59,,a0-e7-0b-78-e6-96,a0-e7-0b-78-e6-96,,normal,526017,PF32Y4VT,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Murray Quinn,2024-11-15T14:49:15Z,,S-1-5-21-1451295978-1787659277-1218592214-1003
+SMH-L198,2024-11-15T15:48:12Z,2023-10-09T14:44:56Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4317,HP ZBook Fury 16 G9 Mobile Workstation PC,HP,Workstation,Laptop,2024-11-06T08:13:55Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:18 UTC",No policy,"platform_default
+24 Oct 24 13:18 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:35 UTC",No policy,No policy,7681467d1ec54c1aadf708d47da8fea2,192.168.0.125,192.168.0.125,192.168.0.1,104.219.185.179,schubermitchell.com,e0-73-e7-63-82-da,e0-73-e7-63-82-da,,normal,591474,5CG31452HY,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,aelivo,2024-11-08T15:06:25Z,,S-1-5-21-2030993556-1131631915-3534476973-1124
+LDGP-T13,2024-10-29T15:03:55Z,2024-10-29T15:04:07Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.4894,"28012 MS3 MAIN PCBA (128GB eMMC, 8GB RAM)","Juniper Systems, Inc.",Workstation,Laptop,2024-10-28T16:45:03Z,,,"Production Prevent - Phase 3
+Changes pending",No policy,"platform_default
+Changes pending","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+Changes pending",No policy,No policy,72bbd0f11f7e4348aaf46f30f54f9ecc,172.16.180.51,172.16.102.21,172.16.102.1,72.196.88.162,,cc-4b-73-99-4e-a0,b0-be-83-2b-8b-dd,,normal,329417,265240,7.15.18514.0,,,,,,,,,yes,,,,,,,,,,,,,,,Windows - Workstations,T13User,2024-10-29T15:03:59Z,,S-1-5-21-1063688098-443649057-1230744608-1005
+LDG-L004.local,2024-11-15T14:09:11Z,2024-09-12T12:57:10Z,Mac,Sonoma (14),23H124,,23.6.0,"MacBookAir10,1",Apple Inc.,Workstation,Other,,"Workstations, LDG Project Management LLC",Default-First-Site-Name,"Phase 1 - initial deployment
+20 Oct 24 14:46 UTC",No policy,"platform_default
+17 Oct 24 19:54 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+12 Sep 24 13:00 UTC",No policy,No policy,301b6385c2574165b32338abbe95f53c,192.168.1.116,100.20.76.137,,99.95.121.42,SMH,18-3e-ef-c4-3b-5c,,,normal,4294967295,C02DMFX5Q6L4,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,jgoins,2024-09-12T12:57:10Z,657459480,S-1-5-21-2030993556-1131631915-3534476973-1159
+SMH-L205,2024-11-14T22:33:28Z,2023-10-06T17:30:20Z,Windows,Windows 11,22631,Windows 11 Enterprise,10.0.22631.4169,HP ZBook Fury 16 G9 Mobile Workstation PC,HP,Workstation,Laptop,2024-10-28T19:43:45Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+23 Oct 24 12:13 UTC",No policy,"platform_default
+24 Oct 24 12:31 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 23:19 UTC",No policy,No policy,6f94d7e9006e4c9386b7b73f84fec6a2,192.168.0.137,192.168.0.137,192.168.0.1,104.219.185.179,schubermitchell.com,e0-73-e7-ac-c8-26,e0-73-e7-ac-c8-26,,normal,591474,5CG32036GJ,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,DWM-9,2023-11-28T23:14:59Z,,
+SMH-L229,2024-11-14T22:50:29Z,2024-06-30T06:42:32Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4317,HP ZBook Power 15.6 inch G10 Mobile Workstation PC,HP,Workstation,Laptop,2024-11-14T14:04:36Z,"Workstations, Joplin",Default-First-Site-Name,"Production Prevent - Phase 3
+21 Oct 24 14:03 UTC",No policy,"platform_default
+24 Oct 24 13:18 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+12 Aug 24 14:13 UTC",No policy,No policy,b07056a6962a4f4a804e15eb5a8ba2cc,192.168.20.9,192.168.20.9,192.168.20.1,104.219.185.179,schubermitchell.com,2c-58-b9-51-3e-b3,2c-58-b9-51-3e-b3,,normal,722594,5CD405C0CY,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jmorgan,2024-11-04T14:09:33Z,,S-1-5-21-2030993556-1131631915-3534476973-2827
+SMH-L106,2024-11-15T15:46:23Z,2023-10-07T00:17:11Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 440 G7,HP,Workstation,Laptop,2024-11-14T16:19:17Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 16:15 UTC",No policy,"platform_default
+25 Oct 24 11:47 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+09 Aug 24 16:46 UTC",No policy,No policy,3f43bf88fa6f452f90528f21caa111d8,172.16.18.52,172.16.18.52,172.16.18.1,72.24.150.2,schubermitchell.com,d8-c0-a6-70-ac-8d,d8-c0-a6-70-ac-8d,,normal,526060,5CD035CSK0,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,rgammons,2024-11-14T16:21:10Z,,S-1-5-21-2030993556-1131631915-3534476973-1129
+SMH-L99,2024-11-14T19:38:10Z,2023-10-06T20:40:40Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 440 G7,HP,Workstation,Laptop,2024-11-07T17:08:51Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+21 Oct 24 18:30 UTC",No policy,"platform_default
+28 Oct 24 16:15 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+14 Aug 24 13:32 UTC",No policy,No policy,791c53b681c24a1da271528af56916d0,172.20.10.2,172.20.10.2,172.20.10.1,72.222.76.173,schubermitchell.com,d8-c0-a6-70-ac-4b,d8-c0-a6-70-ac-4b,,normal,526060,5CD035CSLS,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jperrin,2024-11-07T17:10:35Z,,S-1-5-21-2030993556-1131631915-3534476973-1130
+SMH-L109,2024-11-15T15:18:37Z,2023-10-06T16:28:53Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 440 G7,HP,Workstation,Laptop,2024-10-31T11:52:02Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 16:32 UTC",No policy,"platform_default
+24 Oct 24 11:50 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+12 Aug 24 12:05 UTC",No policy,No policy,efcb4423f1494683b79dea0956d48874,172.16.102.21,172.16.102.21,172.16.102.1,72.196.88.162,schubermitchell.com,d8-c0-a6-72-95-65,d8-c0-a6-72-95-65,,normal,526060,5CD034L4B1,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,dgollhofer,2024-10-31T11:54:18Z,,S-1-5-21-2030993556-1131631915-3534476973-1245
+SMH-L66,2024-11-15T15:43:28Z,2023-10-06T17:30:41Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 450 G7,HP,Workstation,Laptop,2024-10-30T07:04:41Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:24 UTC",No policy,"platform_default
+24 Oct 24 00:56 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 20:03 UTC",No policy,No policy,99b53c9169234dd3b5556a31fb1acc03,192.168.0.156,192.168.0.156,192.168.0.1,104.219.185.179,schubermitchell.com,0c-37-96-63-16-4c,0c-37-96-63-16-4c,,normal,526060,5CD0243Y9V,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,bfilip2,2024-08-08T14:00:15Z,,S-1-5-21-2030993556-1131631915-3534476973-1299
+SMH-APP01,2024-11-15T15:39:50Z,2023-10-06T23:37:40Z,Windows,Windows Server 2022,20348,Windows Server 2022 Standard,10.0.20348.2760,"VMware7,1","VMware, Inc.",Server,Other,2024-10-19T20:26:21Z,Servers,Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:19 UTC",No policy,"platform_default
+23 Oct 24 23:56 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:34 UTC",No policy,No policy,06a5d5d6be2143e7b7d71fd7708a76ef,192.168.0.6,192.168.0.6,192.168.0.1,104.219.185.179,schubermitchell.com,00-0c-29-f9-7a-64,00-0c-29-f9-7a-64,,normal,329303,VMware-56 4d ff 2f c2 2a 64 1c-f2 d4 a6 23 8f f9 7a 64,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Servers,,,,
+SMH-L74,2024-11-14T23:24:08Z,2023-10-07T03:09:52Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 440 G7,HP,Workstation,Laptop,2024-10-28T21:46:03Z,"Workstations, LDG Project Management LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:22 UTC",No policy,"platform_default
+24 Oct 24 12:22 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+12 Aug 24 13:59 UTC",No policy,No policy,ccdd03031e11420f9a8074418990dda5,192.168.0.36,192.168.0.36,192.168.0.1,98.187.133.225,schubermitchell.com,70-66-55-d5-81-31,e8-f4-08-30-bd-df,,normal,526060,5CD024GL8J,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,ktucker,2024-11-14T22:56:17Z,,S-1-5-21-2030993556-1131631915-3534476973-1250
+SMH-L97,2024-11-15T15:36:52Z,2023-10-06T16:53:32Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G7,HP,Workstation,Laptop,2024-11-08T22:22:09Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:31 UTC",No policy,"platform_default
+24 Oct 24 12:57 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:54 UTC",No policy,No policy,ac8ec44f3ae14ba0bb94047e7e6fdc04,172.16.106.5,172.16.106.5,172.16.106.1,66.119.22.84,schubermitchell.com,d8-c0-a6-72-02-eb,d8-c0-a6-72-02-eb,,normal,526060,5CD0386YJD,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,alett,2024-10-09T18:06:44Z,,S-1-5-21-2030993556-1131631915-3534476973-1108
+SMH-L274,2024-11-15T15:48:19Z,2024-09-30T13:39:04Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4455,82YN,LENOVO,Workstation,Laptop,2024-11-15T14:16:41Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:20 UTC",No policy,"platform_default
+24 Oct 24 13:33 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+30 Sep 24 13:42 UTC",No policy,No policy,89ac12360abd406a90b15c55faf41e8e,172.16.106.11,172.16.106.11,172.16.106.1,66.119.22.84,,e0-c2-64-2d-48-c1,e0-c2-64-2d-48-c1,,normal,722595,YX07NSD7,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,lwilson,2024-11-15T14:18:20Z,,S-1-5-21-1869357197-523796112-1449829100-1003
+SMH-L134,2024-11-15T15:44:40Z,2023-10-06T16:30:30Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-11T16:43:12Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:24 UTC",No policy,"platform_default
+23 Oct 24 23:47 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:47 UTC",No policy,No policy,69c6a8dd90a240d18dfe3fe145b5a5f1,172.16.106.8,172.16.106.8,172.16.106.1,66.119.22.84,schubermitchell.com,fc-b3-bc-3c-c2-ec,fc-b3-bc-3c-c2-ec,,normal,526017,5CD114G9M5,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,aeidson,2024-11-11T16:45:25Z,,S-1-5-21-2030993556-1131631915-3534476973-1121
+SMH-L267,2024-11-15T15:41:54Z,2024-10-10T18:45:47Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4391,Surface Pro 9,Microsoft Corporation,Workstation,Laptop,2024-11-08T16:40:43Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:18 UTC",No policy,"platform_default
+24 Oct 24 00:47 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+10 Oct 24 18:47 UTC",No policy,No policy,a211d6997635455d8693396f68841d68,172.16.100.49,172.16.100.49,172.16.100.1,104.219.185.179,schubermitchell.com,d4-e9-8a-a8-62-40,d4-e9-8a-a8-62-40,,normal,591524,BK33T4W23483BF,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,SMHADMIN,2024-10-25T15:29:12Z,,S-1-5-21-1551953669-3588268792-3192718351-1005
+SMH-L262,2024-11-13T14:49:37Z,2024-09-27T19:39:19Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4317,Surface Pro 7+,Microsoft Corporation,Workstation,Laptop,2024-10-21T12:43:51Z,,,"Production Prevent - Phase 3
+21 Oct 24 15:14 UTC",No policy,"platform_default
+29 Oct 24 19:29 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 19:46 UTC",No policy,No policy,6646f80696f34f5eb1e2e6444c1a6a91,172.16.106.3,172.16.106.3,172.16.106.1,66.119.22.84,,68-7a-64-e1-4e-89,68-7a-64-e1-4e-89,,normal,526017,000009934453,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Tyler Shrum,2024-10-30T13:30:42Z,,S-1-5-21-966503394-19843452-1270427009-1002
+SMH-L137,2024-11-15T15:36:41Z,2023-12-06T14:52:47Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-10-30T09:29:30Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:21 UTC",No policy,"platform_default
+24 Oct 24 13:25 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:33 UTC",No policy,No policy,11069a3a1b65475498ed78c2053a7687,192.168.0.123,192.168.0.123,192.168.0.1,104.219.185.179,schubermitchell.com,b0-22-7a-cc-34-d1,b0-22-7a-cc-34-d1,,normal,526017,5CD114G9MW,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jrobinson,2024-11-05T14:25:31Z,,S-1-5-21-2030993556-1131631915-3534476973-2715
+SMH-L189.local,2024-11-15T14:47:07Z,2024-09-06T01:31:05Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac14,2",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Phase 1 - initial deployment
+18 Oct 24 17:44 UTC",No policy,"platform_default
+17 Oct 24 13:54 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+06 Sep 24 01:47 UTC",No policy,No policy,ce67f4d040944367a87e031f52d58479,172.16.91.80,2600:1f14:2d89:8302:1:2:3:409,,173.225.245.67,SMH,36-af-00-84-8b-04,,,normal,4294967295,MMC4KFFM9J,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,awise,2024-09-06T01:31:03Z,2145460661,S-1-5-21-2030993556-1131631915-3534476973-1192
+SMH-L282.local,2024-11-15T15:26:45Z,2024-10-04T20:00:15Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac15,12",Apple Inc.,Workstation,Other,,,,"Phase 1 - initial deployment
+18 Oct 24 15:28 UTC",No policy,"platform_default
+16 Oct 24 23:17 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+04 Oct 24 20:04 UTC",No policy,No policy,1eeb1554fed64f4e8b71fbca8f107e66,172.16.10.18,35.162.239.174,,72.24.150.2,SMH,06-85-8a-12-91-7a,,,normal,4294967295,C92F6LJ7VG,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,nlinder,2024-11-08T18:48:43Z,1282827832,S-1-5-21-2030993556-1131631915-3534476973-1495
+SMH-L147,2024-11-14T23:11:41Z,2023-10-06T16:53:47Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.4894,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-10-11T15:31:12Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 17:11 UTC",No policy,"platform_default
+24 Oct 24 13:08 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:23 UTC",No policy,No policy,705ac2b37b5849e581f700dc162a2eec,192.168.0.135,192.168.0.135,192.168.0.1,104.219.185.179,schubermitchell.com,6c-02-e0-8d-15-af,6c-02-e0-8d-15-af,,normal,526017,5CD106J97G,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,mmcallister,2024-10-11T15:34:55Z,,S-1-5-21-2030993556-1131631915-3534476973-2808
+SMH-L139,2024-11-15T15:41:22Z,2023-10-06T16:28:32Z,Windows,Windows 11,26100,Windows 11 Pro,10.0.26100.2033,HP ProBook 440 G7,HP,Workstation,Laptop,2024-11-04T17:36:04Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:26 UTC",No policy,"platform_default
+23 Oct 24 23:57 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:34 UTC",No policy,No policy,f7f4b461224c4e9680db98bc9eb150e5,172.16.102.11,192.168.0.105,192.168.0.1,72.196.88.162,schubermitchell.com,20-4e-f6-51-bf-f5,64-4e-d7-4b-98-f7,,normal,526060,5CD044CB4B,7.17.18721.0,,,,,,,,,yes,,,,,,,,,,,,,,,Windows - Workstations,tmoore,2024-11-04T20:25:36Z,,S-1-5-21-2030993556-1131631915-3534476973-2642
+SMH-L276,2024-11-15T15:26:09Z,2024-09-27T17:24:00Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4455,82YN,LENOVO,Workstation,Laptop,2024-11-14T20:12:50Z,,,"Production Prevent - Phase 3
+18 Oct 24 18:36 UTC",No policy,"platform_default
+24 Oct 24 00:00 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 17:26 UTC",No policy,No policy,94e72013e2c54322b6419f3822dfe94a,192.168.1.73,2600:1702:2a20:21a0:dd99:291c:31e1:2507,fe80:0:0:0:1655:b9ff:fe07:32e2,162.230.100.144,,e4-0d-36-2f-5e-4f,e4-0d-36-2f-5e-4f,,normal,722595,YX081JSX,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,James Richardson,2024-11-08T23:12:55Z,,S-1-5-21-3049424072-3598686004-2381637307-1003
+MacBookAir.lan,2024-11-15T15:26:44Z,2024-05-06T16:17:48Z,Mac,Sequoia (15),24B83,,24.1.0,"MacBookAir10,1",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 17:34 UTC",No policy,"platform_default
+17 Oct 24 15:04 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:34 UTC",No policy,No policy,3e05bdf61bca44b4b281bd9f27da11e2,192.168.1.141,35.162.224.228,,172.103.36.130,SCHUBERMITCHELL,18-3e-ef-cc-5a-bd,,,normal,4294967295,C02DQUQ6Q6L4,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,madams,2024-05-30T16:53:56Z,1542046299,S-1-5-21-2030993556-1131631915-3534476973-2653
+SMH-L184,2024-11-15T15:17:49Z,2023-10-06T16:29:05Z,Windows,Windows 11,26100,Windows 11 Pro,10.0.26100.2033,HP ProBook x360 435 G8 Notebook PC,HP,Workstation,Laptop,2024-11-15T13:02:56Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+23 Oct 24 17:05 UTC",No policy,"platform_default
+24 Oct 24 13:26 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:44 UTC",No policy,No policy,bc289a833479487ba639eb6a448c5694,192.168.0.101,192.168.0.101,192.168.0.1,104.219.185.179,schubermitchell.com,e0-70-ea-37-f6-05,e0-70-ea-37-f6-05,,normal,10817280,5CG136B72K,7.17.18721.0,,,,,,,,,yes,,,,,,,,,,,,,,,Windows - Workstations,cgable,2024-11-14T20:59:40Z,,S-1-5-21-2030993556-1131631915-3534476973-1586
+SMH-L67.local,2024-11-14T09:30:33Z,2024-02-09T18:16:38Z,Mac,Sequoia (15),24B83,,24.1.0,"MacBookAir9,1",Apple Inc.,Workstation,Laptop,,"Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 15:23 UTC",No policy,"platform_default
+17 Oct 24 00:12 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:48 UTC",No policy,No policy,4a458b5feef94c959345e60336b28156,172.16.100.50,35.162.239.174,,104.219.185.179,SMH,3c-22-fb-b5-5b-a0,,,normal,460517,FVFCT0P8MNHP,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,nlinder,2024-11-01T19:18:32Z,1282827832,S-1-5-21-2030993556-1131631915-3534476973-1495
+SMH-L157.local,2024-11-15T15:47:05Z,2024-02-22T16:13:14Z,Mac,Sequoia (15),24B83,,24.1.0,"MacBookAir10,1",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+19 Oct 24 16:07 UTC",No policy,"platform_default
+17 Oct 24 14:31 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:26 UTC",No policy,No policy,4ea4fb6e38fb4ae4aedb3794159937ea,172.16.102.24,100.20.76.137,,2600:8804:8256:6000:96d:9525:c44e:1cc3,SMH,4e-dd-0b-32-3e-41,,,normal,4294967295,C02DQTY9Q6L4,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,cbush,2024-05-30T14:22:12Z,566666603,S-1-5-21-2030993556-1131631915-3534476973-2784
+SMH-L196.local,2024-11-15T15:44:51Z,2024-01-15T14:32:20Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac14,2",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Phase 1 - initial deployment
+18 Oct 24 15:43 UTC",No policy,"platform_default
+17 Oct 24 03:02 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:33 UTC",No policy,No policy,ddb00478b4764f168df1d85c1f62eb85,172.16.102.29,35.162.224.228,,72.196.88.162,SMH,56-b2-ac-3c-fe-e5,,,normal,4294967295,FMH33FG9XG,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,khorn,2024-06-03T17:02:29Z,2050165822,S-1-5-21-2030993556-1131631915-3534476973-1308
+SMH-L258,2024-11-15T15:29:54Z,2024-09-27T16:53:16Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4317,82QG,LENOVO,Workstation,Laptop,2024-10-11T17:05:13Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:26 UTC",No policy,"platform_default
+24 Oct 24 14:00 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 16:56 UTC",No policy,No policy,a868e8116ed9494185ddfae0111b8085,192.168.1.88,192.168.1.88,192.168.1.254,162.230.100.144,,a0-29-42-70-33-e8,a0-29-42-70-33-e8,,normal,591523,PF48N0GS,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Nickalaus Recla,2024-11-08T21:49:59Z,,S-1-5-21-3461330023-1342156912-1455789515-1002
+SMH-L224.local,2024-11-15T14:45:27Z,2024-05-15T14:15:40Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac15,3",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 19:45 UTC",No policy,"platform_default
+17 Oct 24 13:59 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:34 UTC",No policy,No policy,c5c3ba85527f4944a7f12f5d8caf5fe3,172.20.10.6,100.20.76.137,,173.47.220.185,SMH,16-4a-4b-cb-d4-3e,,,normal,4294967295,KFVKJDV7C2,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,ayeager,2024-05-30T19:03:55Z,134967121,S-1-5-21-2030993556-1131631915-3534476973-2686
+SMH-L225.local,2024-11-15T15:37:11Z,2024-06-11T18:23:06Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac15,3",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 15:26 UTC",No policy,"platform_default
+17 Oct 24 01:25 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:33 UTC",No policy,No policy,7bc2ac96bdc14d8ba3dc07e37d8c8328,192.168.0.141,2600:1f14:2d89:8303:1:2:3:408,,2600:8804:837c:2800:411d:9b15:d9a5:1ad5,SMH,2a-4f-15-f8-80-03,,,normal,4294967295,C6LJYY23C9,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,kkoskovick,2024-06-17T13:10:14Z,1182630386,S-1-5-21-2030993556-1131631915-3534476973-1204
+SMH-L247,2024-11-08T19:54:13Z,2024-09-27T17:24:50Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4317,Surface Pro 7,Microsoft Corporation,Workstation,Laptop,2024-10-20T05:41:10Z,,,"Production Prevent - Phase 3
+18 Oct 24 19:27 UTC",No policy,"platform_default
+08 Nov 24 18:40 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 17:28 UTC",No policy,No policy,45b681a19c0149b996876b107d354514,172.16.106.20,172.16.106.20,172.16.106.1,66.119.22.84,,e8-84-a5-31-d2-83,e8-84-a5-31-d2-83,,normal,460517,011157610353,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Kevin Hillis,2024-11-08T19:49:17Z,,S-1-5-21-2610861825-1202879072-2584692791-1004
+SMH-L135,2024-11-15T14:24:59Z,2023-10-06T16:53:22Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.4894,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-13T14:18:57Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:20 UTC",No policy,"platform_default
+24 Oct 24 13:11 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:23 UTC",No policy,No policy,0e0c4be281854f9a9aef453c0b4dd6b0,192.168.0.147,172.16.100.102,172.16.100.1,104.219.185.179,schubermitchell.com,6c-02-e0-8d-16-71,d8-f8-83-c2-59-20,,normal,526017,5CD106J9FQ,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,twilliams,2024-11-04T15:46:42Z,,S-1-5-21-2030993556-1131631915-3534476973-1461
+SMH-L176.local,2024-11-14T21:45:06Z,2024-04-04T21:45:32Z,Mac,Sequoia (15),24B83,,24.1.0,"MacBookAir10,1",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Phase 1 - initial deployment
+21 Oct 24 13:21 UTC",No policy,"platform_default
+17 Oct 24 19:47 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 22:12 UTC",No policy,No policy,9d3d32b7fb10446daa2bb5e89d9d4c7f,172.20.10.3,2600:1f14:2d89:8303:1:2:3:406,,2600:8804:83aa:bb00:6843:938d:80a1:9372,SMH,12-0f-9b-e7-52-63,,,normal,4294967295,FVFH60E7Q6L7,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,abessette,2024-08-01T19:22:09Z,1563877979,S-1-5-21-2030993556-1131631915-3534476973-2826
+SMH--L188.local,2024-11-15T15:42:16Z,2024-04-04T20:42:31Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac14,2",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 20:45 UTC",No policy,"platform_default
+17 Oct 24 03:28 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 23:32 UTC",No policy,No policy,7027b3f6297f4a6aa22326e7d89f4c80,172.16.100.18,35.162.239.174,,104.219.185.179,SMH,9a-79-6c-d3-60-c1,,,normal,4294967295,PT2JKQDVFQ,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,,,,
+SMH-L283.local,2024-11-15T14:31:29Z,2024-10-04T20:00:17Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac15,12",Apple Inc.,Workstation,Other,,"Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 21:00 UTC",No policy,"platform_default
+17 Oct 24 15:30 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+04 Oct 24 20:02 UTC",No policy,No policy,87d748c4f8f24cd798acec6bae38a594,172.16.102.47,100.20.76.137,,2600:8804:837c:1e00:edea:5598:b3c2:bbc0,SMH,0e-67-2b-44-ee-94,,,normal,4294967295,F7VHDP9941,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,mverharst,2024-10-31T19:49:12Z,884191994,S-1-5-21-2030993556-1131631915-3534476973-1195
+SMh-L210.local,2024-11-15T15:33:25Z,2023-12-20T22:24:00Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac14,2",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 21:13 UTC",No policy,"platform_default
+17 Oct 24 14:13 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+09 Aug 24 04:23 UTC",No policy,No policy,a3d910a8b70d4863b275ea3a3534de18,172.16.10.6,35.162.224.228,,67.61.154.21,SMH,da-f7-8a-50-a4-09,,,normal,4294967295,WJQH3X26TY,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,mklotz,2024-10-30T15:51:14Z,590818396,S-1-5-21-2030993556-1131631915-3534476973-2617
+MacBookAir.localdomain,2024-11-15T15:43:35Z,2024-05-02T16:32:40Z,Mac,Sequoia (15),24B83,,24.1.0,"MacBookAir9,1",Apple Inc.,Workstation,Laptop,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 21:35 UTC",No policy,"platform_default
+17 Oct 24 13:13 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:27 UTC",No policy,No policy,b7aab1531419400eb7d58715a114d338,172.16.100.21,100.20.76.137,,162.249.49.155,SMH,14-7d-da-c8-f1-cb,,,normal,460517,FVFDN1NUMNHY,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,tberry,2024-09-17T14:43:50Z,1400041023,S-1-5-21-2030993556-1131631915-3534476973-1477
+SMH-L123,2024-10-01T15:42:30Z,2024-06-17T20:38:16Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 440 G7,HP,Workstation,Laptop,2024-10-01T14:54:58Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 2
+19 Jul 24 23:27 UTC",No policy,"platform_default
+29 Aug 24 16:54 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+29 Aug 24 16:31 UTC",No policy,No policy,eded842edaf243adb99213e93d20df37,172.16.100.244,172.16.100.244,172.16.100.1,104.219.185.179,schubermitchell.com,20-4e-f6-51-23-a5,20-4e-f6-51-23-a5,,normal,526060,5CD044C9PV,7.15.18514.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,randerson,2024-10-01T15:00:40Z,,S-1-5-21-2030993556-1131631915-3534476973-1507
+SMH-L241,2024-11-15T15:26:24Z,2024-09-12T19:09:13Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 460 16 inch G11 Notebook PC,HP,Workstation,Laptop,2024-10-30T07:10:12Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+24 Oct 24 20:57 UTC",No policy,"platform_default
+24 Oct 24 20:59 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+12 Sep 24 19:12 UTC",No policy,No policy,6b2f18ec88854916b3a49498024b19b1,172.16.100.2,172.16.100.2,172.16.100.1,104.219.185.179,schubermitchell.com,dc-45-46-4d-de-f6,dc-45-46-4d-de-f6,,normal,657060,5CD420DHXM,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,smhadmin,2024-09-12T19:11:46Z,,S-1-5-21-3392482108-2230521243-3999380641-1002
+LDG-L009,2024-11-15T15:39:35Z,2023-11-29T18:52:51Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP Pro x360 435 13.3 inch G10 Notebook PC,HP,Workstation,Laptop,2024-10-30T18:37:10Z,"Workstations, Land Development Group LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 20:23 UTC",No policy,"platform_default
+28 Oct 24 12:34 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+12 Aug 24 12:59 UTC",No policy,No policy,47f4190d784b4a709990143f6bf77ad4,192.168.0.116,192.168.0.116,192.168.0.1,104.219.185.179,schubermitchell.com,d0-ad-08-08-04-cf,d0-ad-08-08-04-cf,,normal,10817280,5CG343066Y,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,epolley,2024-11-13T14:37:16Z,,S-1-5-21-2030993556-1131631915-3534476973-1409
+SMH-L253,2024-11-15T15:32:21Z,2024-09-27T16:53:33Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4455,82BJ,LENOVO,Workstation,Laptop,2024-11-13T15:55:28Z,,,"Production Prevent - Phase 3
+18 Oct 24 18:04 UTC",No policy,"platform_default
+24 Oct 24 14:43 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 16:56 UTC",No policy,No policy,ec625c5020c04a82bd635d6163a213b4,192.168.0.2,192.168.0.2,192.168.0.1,67.237.180.64,,70-cd-0d-0e-c1-bc,70-cd-0d-0e-c1-bc,,normal,526017,PF3APP89,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,User,2024-11-15T15:10:06Z,,S-1-5-21-677546156-819068429-1950538302-1003
+SMH-L110,2024-11-14T22:44:05Z,2023-10-06T16:54:08Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ZBook Power G7 Mobile Workstation,HP,Workstation,Laptop,2024-11-14T14:39:36Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:26 UTC",No policy,"platform_default
+24 Oct 24 13:08 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:31 UTC",No policy,No policy,318880eeae6d43a0826b26386a71cf6a,192.168.0.160,172.16.100.64,172.16.100.1,104.219.185.179,schubermitchell.com,30-24-a9-76-05-bf,68-54-5a-44-1f-ab,,normal,656978,5CD0519343,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,lbrooks,2024-11-07T16:52:29Z,,S-1-5-21-2030993556-1131631915-3534476973-1271
+SMH-L118,2024-11-15T15:35:23Z,2023-10-06T16:29:05Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-11T14:04:30Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:44 UTC",No policy,"platform_default
+23 Oct 24 23:32 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 20:37 UTC",No policy,No policy,c360a503035148fc83b3ba9d6cc04010,172.16.100.167,172.16.100.167,172.16.100.1,104.219.185.179,schubermitchell.com,fc-44-82-08-c6-cc,fc-44-82-08-c6-cc,,normal,526017,5CD10253Q1,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,shill,2024-11-13T15:11:21Z,,S-1-5-21-2030993556-1131631915-3534476973-1420
+SMH-L207.local,2024-11-15T14:50:11Z,2023-10-13T19:09:44Z,Mac,Sonoma (14),23H222,,23.6.0,"Mac14,2",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Phase 1 - initial deployment
+18 Oct 24 15:28 UTC",No policy,"platform_default
+17 Oct 24 14:24 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:30 UTC",No policy,No policy,5fc5909d95004490b6617c1cf9f32649,192.168.1.183,35.162.224.228,,2600:1700:99a0:d040:301c:b6e5:3875:165e,SMH,cc-08-fa-65-fc-48,,,normal,4294967295,DD9RY3CRWF,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,kestabrook,2024-10-15T18:44:18Z,528265529,S-1-5-21-2030993556-1131631915-3534476973-2667
+SMH-L273,2024-11-15T14:47:42Z,2024-09-27T19:09:11Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.2428,82YN,LENOVO,Workstation,Laptop,2024-10-11T21:13:05Z,,,"Production Prevent - Phase 3
+18 Oct 24 18:01 UTC",No policy,"platform_default
+24 Oct 24 13:29 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 19:12 UTC",No policy,No policy,8dd3f95721c84986bc7c91a1faf2e4fc,192.168.0.120,192.168.0.120,192.168.0.1,75.243.181.178,,ac-19-8e-f9-a9-16,50-81-40-a2-d4-4e,,normal,722595,YX06R8RW,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Drew Beaty,2024-11-08T16:15:57Z,,S-1-5-21-1752306028-1429876593-3593998235-1002
+SMH-L222,2024-11-15T15:29:34Z,2023-11-30T14:25:53Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4317,HP ZBook Power 15.6 inch G10 Mobile Workstation PC,HP,Workstation,Laptop,2024-11-14T20:55:37Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:25 UTC",No policy,"platform_default
+24 Oct 24 13:25 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:47 UTC",No policy,No policy,f5132e02c0254cf6b9f46286cdd13d91,172.16.100.114,172.16.100.114,172.16.100.1,104.219.185.179,schubermitchell.com,04-e8-b9-ab-09-e1,04-e8-b9-ab-09-e1,,normal,722594,5CD3426D56,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,gscott,2024-11-14T22:10:55Z,,S-1-5-21-2030993556-1131631915-3534476973-2699
+SMH-L259,2024-11-15T15:39:24Z,2024-09-27T19:09:13Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4455,750QFG,"SAMSUNG ELECTRONICS CO., LTD.",Workstation,Laptop,2024-11-13T07:56:46Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:27 UTC",No policy,"platform_default
+24 Oct 24 13:24 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 19:13 UTC",No policy,No policy,afcd857ff50949c18a8cae47433fec53,192.168.50.109,192.168.50.109,192.168.50.1,75.98.110.198,,58-1c-f8-47-a5-8b,58-1c-f8-47-a5-8b,,normal,722594,65PS9FEW400577K,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Matt Behrend,2024-11-15T13:05:47Z,,S-1-5-21-3883989276-1283757663-915988820-1002
+SMH-L116,2024-11-15T15:29:04Z,2023-10-09T13:45:25Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-10-30T13:13:39Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:28 UTC",No policy,"platform_default
+24 Oct 24 00:10 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+09 Aug 24 13:33 UTC",No policy,No policy,a0e8e8871eef4197b422f427439dc16d,192.168.0.128,192.168.0.128,192.168.0.1,104.219.185.179,schubermitchell.com,6c-02-e0-84-e6-a5,6c-02-e0-84-e6-a5,,normal,526017,5CD10253NJ,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,jcovert,2024-09-30T13:16:55Z,,S-1-5-21-2030993556-1131631915-3534476973-1387
+SMH-L260,2024-11-15T15:43:16Z,2024-09-27T17:26:32Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4455,82YN,LENOVO,Workstation,Laptop,2024-11-14T03:55:08Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:19 UTC",No policy,"platform_default
+24 Oct 24 01:59 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 17:34 UTC",No policy,No policy,6a1b5d3a202647f5b047101a29146b1b,172.16.106.12,172.16.106.12,172.16.106.1,66.119.22.84,,e4-0d-36-45-2c-4d,e4-0d-36-45-2c-4d,,normal,722595,YX0807MV,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Karie Ann Murray,2024-11-15T14:01:43Z,,S-1-5-21-2255131807-3832457268-1325748439-1003
+SMH-L131.local,2024-11-15T15:17:08Z,2024-05-06T17:25:42Z,Mac,Sequoia (15),24B83,,24.1.0,"MacBookAir9,1",Apple Inc.,Workstation,Laptop,,,,"Phase 1 - initial deployment
+18 Oct 24 15:53 UTC",No policy,"platform_default
+16 Oct 24 23:21 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 20:07 UTC",No policy,No policy,cf688564c10f41758b78042f9f2f9509,172.16.100.3,35.162.224.228,,104.219.185.179,SMH,da-cb-85-8f-13-5f,,,normal,460517,FVFDL8WNMNHY,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,jwalker,2024-09-27T20:04:25Z,1487256557,S-1-5-21-2030993556-1131631915-3534476973-2809
+SMH-L231,2024-11-15T15:41:07Z,2024-07-09T15:44:22Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 450 15.6 inch G10 Notebook PC,HP,Workstation,Laptop,2024-10-30T09:03:22Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:32 UTC",No policy,"platform_default
+24 Oct 24 00:40 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+22 Aug 24 18:03 UTC",No policy,No policy,96bafcf1199a42fabb3b4ad7e2ee4dc7,172.16.100.180,172.16.100.180,172.16.100.1,104.219.185.179,,f8-fe-5e-19-0f-32,f8-fe-5e-19-0f-32,,normal,722595,5CD4101JGD,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,SMHADMIN,2024-07-11T18:09:43Z,,S-1-5-21-1714084043-2391113976-3755257990-1002
+SMH-L272,2024-11-15T15:27:57Z,2024-09-27T16:53:12Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4455,82BJ,LENOVO,Workstation,Laptop,2024-11-15T13:52:15Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:22 UTC",No policy,"platform_default
+24 Oct 24 11:58 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 16:56 UTC",No policy,No policy,ce4895af572b4e21a2a9961ab74a8b9d,172.16.106.2,172.16.106.2,172.16.106.1,66.119.22.84,,f8-9e-94-f6-09-f0,f8-9e-94-f6-09-f0,,normal,526017,PF3SJV5V,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Trish Huelga,2024-11-15T13:54:00Z,,S-1-5-21-2291241385-893302471-2976096627-1002
+SMH-L54,2024-11-15T15:21:58Z,2023-09-28T17:00:39Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,20NB005MUS,LENOVO,Workstation,Laptop,2024-11-05T01:06:03Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:19 UTC",No policy,"platform_default
+24 Oct 24 00:13 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:43 UTC",No policy,No policy,dd7ade9aa0c9457b940fc05ae08ead2e,10.219.121.226,10.219.121.226,10.128.128.128,24.197.196.103,schubermitchell.com,b6-90-08-62-1f-e5,b6-90-08-62-1f-e5,,normal,526060,PF1FT2AK,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,smcbroom,2024-11-05T01:10:28Z,,S-1-5-21-2030993556-1131631915-3534476973-1107
+Mac.lan,2024-11-15T15:33:34Z,2024-05-17T18:45:59Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac15,12",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 17:23 UTC",No policy,"platform_default
+17 Oct 24 13:51 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+15 Aug 24 14:48 UTC",No policy,No policy,cc9f91ba59844a62906158f9306c2b5c,172.16.102.14,100.20.76.137,,86.63.159.144,SMH,7a-65-44-4e-d0-7d,,,normal,4294967295,KVXCQC9XX6,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,pdavey,2024-10-25T21:30:14Z,559223662,S-1-5-21-2030993556-1131631915-3534476973-2885
+SMH-L249,2024-10-18T19:20:18Z,2024-10-08T02:07:13Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4169,Surface Pro 7,Microsoft Corporation,Workstation,Laptop,2024-09-27T19:40:13Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:20 UTC",No policy,"platform_default
+Changes pending","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Oct 24 02:08 UTC",No policy,No policy,6ba0ed550d96445ab4e821a6311a997d,172.16.106.16,172.16.106.16,172.16.106.1,66.119.22.84,,d4-d2-52-40-70-4f,d4-d2-52-40-70-4f,,normal,460517,026235393353,7.16.18613.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,cronkadmin,2024-10-09T02:45:53Z,,S-1-5-21-2513250102-2378370794-3092799306-1007
+SMH-L197.local,2024-11-15T15:26:14Z,2023-10-12T14:32:57Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac14,7",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Phase 1 - initial deployment
+18 Oct 24 20:49 UTC",No policy,"platform_default
+17 Oct 24 13:18 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+09 Aug 24 00:49 UTC",No policy,No policy,5015e9874e0b43b9853564cfddc52cbf,172.20.10.13,35.162.239.174,,97.135.135.233,SMH,1e-be-a7-00-91-5d,,,normal,4294967295,V9HCXM5Y9K,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,cbrown,2024-09-04T21:35:45Z,1415818704,S-1-5-21-2030993556-1131631915-3534476973-1369
+SMH-L219,2024-11-15T15:27:34Z,2024-01-11T20:15:22Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 450 15.6 inch G10 Notebook PC,HP,Workstation,Laptop,2024-11-13T14:09:23Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:27 UTC",No policy,"platform_default
+24 Oct 24 12:53 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:40 UTC",No policy,No policy,58523b5eedd248eba71918ede08bea17,192.168.0.107,192.168.0.107,192.168.0.1,104.219.185.179,schubermitchell.com,64-4e-d7-2c-30-35,64-4e-d7-2c-30-35,,normal,722595,5CD3353WTJ,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,alanders,2024-11-13T14:10:39Z,,S-1-5-21-2030993556-1131631915-3534476973-2723
+SMH-L227.local,2024-11-15T15:03:06Z,2024-05-17T15:57:43Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac15,12",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+21 Oct 24 15:35 UTC",No policy,"platform_default
+21 Oct 24 15:41 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Aug 24 15:07 UTC",No policy,No policy,9f80a24d2a3a40dc99a772937982392e,192.168.0.155,2600:1f14:2d89:8303:1:2:3:408,,173.23.10.38,SMH,16-25-ec-7c-08-e7,,,normal,4294967295,J7M2QFPGDX,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,cosborn,2024-10-22T14:45:52Z,1176386519,S-1-5-21-2030993556-1131631915-3534476973-1287
+SMH-L183.local,2024-11-15T14:00:48Z,2024-01-24T16:18:55Z,Mac,Sequoia (15),24B83,,24.1.0,"MacBookAir10,1",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 17:27 UTC",No policy,"platform_default
+17 Oct 24 13:53 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:50 UTC",No policy,No policy,ac0193ef4e2f4d36be1b9f64fde1f6fa,172.16.102.33,35.162.224.228,,2600:8804:839c:130:cde4:8564:6a9d:c61c,SMH,b0-be-83-2b-8b-dd,,,normal,4294967295,FVFGQ4LDQ6LR,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,llee,2024-11-15T13:58:48Z,1929236953,S-1-5-21-2030993556-1131631915-3534476973-2639
+SMH-L182,2024-11-15T15:45:37Z,2023-10-09T13:45:18Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-14T23:04:19Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:19 UTC",No policy,"platform_default
+24 Oct 24 13:08 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:41 UTC",No policy,No policy,850b91927d6e4388811e34bbcfe3475f,192.168.12.159,2607:fb90:cf8e:f17:8c7c:8ded:cceb:f16a,fe80:0:0:0:1a6a:81ff:fec8:7a81,104.219.185.179,schubermitchell.com,48-51-c5-38-f7-fc,48-51-c5-38-f7-fc,,normal,526017,5CD1526L17,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,htaylor,2024-11-07T16:25:12Z,,S-1-5-21-2030993556-1131631915-3534476973-1568
+SMH-L122,2024-11-15T15:03:20Z,2024-01-11T18:24:06Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,Surface Book 3,Microsoft Corporation,Workstation,Laptop,2024-11-14T21:14:32Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:19 UTC",No policy,"platform_default
+23 Oct 24 23:38 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 22:17 UTC",No policy,No policy,cc09d66a182e4a38813d4f074dcdf063,172.20.10.3,172.20.10.3,172.20.10.1,174.205.97.132,schubermitchell.com,e8-f4-08-30-bd-df,e8-f4-08-30-bd-df,,normal,460517,025259510557,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,gdennis,2024-11-13T17:34:05Z,,S-1-5-21-2030993556-1131631915-3534476973-2769
+SMH-L265,2024-11-15T15:46:13Z,2024-09-27T18:21:30Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4455,Surface Pro 9,Microsoft Corporation,Workstation,Laptop,2024-11-14T06:19:34Z,,,"Production Prevent - Phase 3
+18 Oct 24 19:02 UTC",No policy,"platform_default
+24 Oct 24 21:00 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 18:25 UTC",No policy,No policy,d26867140f12499599cda4e601c664ce,172.20.10.7,2600:1700:a320:1200:e159:1ac7:b753:f214,fe80:0:0:0:6e4b:b4ff:fe2a:8791,174.210.1.208,,54-6c-eb-20-67-50,54-6c-eb-20-67-50,,normal,591524,0F01HXL22303BF,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Nathan Miller,2024-11-14T21:56:12Z,,S-1-5-21-1979724460-1943785018-2463413184-1002
+SMH-L239,2024-11-14T21:10:31Z,2024-09-06T22:47:01Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 440 14 inch G11 Notebook PC,HP,Workstation,Laptop,2024-10-30T07:05:27Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+24 Oct 24 20:57 UTC",No policy,"platform_default
+24 Oct 24 21:00 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+06 Sep 24 22:49 UTC",No policy,No policy,27ff3095dede489a89ac7b230343bfd3,172.16.100.158,172.16.100.158,172.16.100.1,104.219.185.179,schubermitchell.com,dc-45-46-39-b6-c9,dc-45-46-39-b6-c9,,normal,657060,5CD42089PD,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,smhadmin,2024-09-09T15:35:17Z,,S-1-5-21-3392482108-2230521243-3999380641-1002
+SMH-L175,2024-11-15T15:17:19Z,2023-10-06T16:29:29Z,Windows,Windows 10,19045,Windows 10 Pro,10.0.19045.5007,HP ProBook 450 G8 Notebook PC,HP,Workstation,Laptop,2024-11-15T13:59:36Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:38 UTC",No policy,"platform_default
+24 Oct 24 13:23 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+09 Aug 24 13:30 UTC",No policy,No policy,1a23fee33b8a49f5af05ef5d86aed5f4,192.168.1.99,192.168.1.99,192.168.1.1,104.143.49.14,schubermitchell.com,64-79-f0-6f-81-5a,64-79-f0-6f-81-5a,,normal,526017,5CD1395D7F,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,lgrundy,2024-11-14T15:29:36Z,,S-1-5-21-2030993556-1131631915-3534476973-1522
+SMH-L208.local,2024-11-15T14:38:25Z,2023-12-20T22:04:35Z,Mac,Sequoia (15),24B83,,24.1.0,"Mac14,2",Apple Inc.,Workstation,Other,,"MAC OS, Workstations, Schuber Mitchell Homes LLC",,"Phase 1 - initial deployment
+18 Oct 24 18:12 UTC",No policy,"platform_default
+17 Oct 24 19:20 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:19 UTC",No policy,No policy,fffd27b2d60e41efa7bdfdb97c94eb98,172.16.102.9,35.162.224.228,,2600:8804:9c01:2e00:247c:5ff2:59b0:63ce,SMH,22-98-ec-16-cd-d9,,,normal,4294967295,JF7RGXTX59,7.18.18701.0,,,,,,,,,no,,,,,,,,,,,,,,,Mac OS,ahawley,2024-06-07T18:56:07Z,1121217504,S-1-5-21-2030993556-1131631915-3534476973-1355
+SMH-L246,2024-11-15T14:25:19Z,2024-09-20T13:24:08Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4169,HP ProBook 440 14 inch G11 Notebook PC,HP,Workstation,Laptop,2024-11-12T15:11:02Z,DefaultNewWorkstations,Default-First-Site-Name,"Production Prevent - Phase 3
+22 Oct 24 13:09 UTC",No policy,"platform_default
+24 Oct 24 13:05 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+20 Sep 24 13:25 UTC",No policy,No policy,44594535bee444d9bcaa9d40efdabc76,172.16.106.7,172.16.106.7,172.16.106.1,66.119.22.84,schubermitchell.com,2c-7b-a0-9b-c7-60,2c-7b-a0-9b-c7-60,,normal,657060,5CD4249KX2,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,npashia,2024-11-12T15:12:37Z,,S-1-5-21-2030993556-1131631915-3534476973-1177
+SMH-L261,2024-11-15T15:43:47Z,2024-09-27T17:28:01Z,Windows,Windows 11,22631,Windows 11 Home,10.0.22631.4455,82YN,LENOVO,Workstation,Laptop,2024-11-13T08:47:52Z,,,"Production Prevent - Phase 3
+18 Oct 24 15:25 UTC",No policy,"platform_default
+24 Oct 24 00:15 UTC","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+27 Sep 24 17:32 UTC",No policy,No policy,8f202bfaddaf441984984544ae13a541,172.16.106.14,172.16.106.14,172.16.106.1,66.119.22.84,,e4-0d-36-34-d0-50,e4-0d-36-34-d0-50,,normal,722595,YX081HT9,7.17.18721.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,Jan,2024-11-14T16:57:17Z,,S-1-5-21-3092651669-1399879357-3700861035-1002
+SMH-L220,2024-10-24T15:50:44Z,2023-10-20T13:52:48Z,Windows,Windows 11,22631,Windows 11 Pro,10.0.22631.4317,HP ProBook 450 15.6 inch G10 Notebook PC,HP,Workstation,Laptop,2024-10-24T15:48:50Z,"Workstations, Schuber Mitchell Homes LLC",Default-First-Site-Name,"Production Prevent - Phase 3
+18 Oct 24 15:20 UTC",No policy,"platform_default
+Changes pending","Default Policy (Windows, Linux, Mac, ChromeOS, K8S)
+08 Aug 24 19:48 UTC",No policy,No policy,d92c2b05aa0a4844a8e290f6357d25b5,172.16.201.167,2600:100a:b005:2b93:5dde:1535:673f:d8c5,fe80:0:0:0:902c:9ff:fed6:b564,104.219.185.179,schubermitchell.com,74-13-ea-24-ba-35,74-13-ea-24-ba-35,,normal,722595,5CD3353WTW,7.16.18613.0,,,,,,,,,no,,,,,,,,,,,,,,,Windows - Workstations,lmason,2024-09-17T15:11:31Z,,S-1-5-21-2030993556-1131631915-3534476973-1442
