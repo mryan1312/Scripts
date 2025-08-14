@@ -1,4 +1,4 @@
-$currentDate = Get-Date
+currentDate = Get-Date
 # Get list of all domain user profiles and iterate through them
 $userList = Get-WMIObject Win32_UserAccount <#-filter "LocalAccount=False"#> | Select-Object -ExpandProperty Name
 foreach ($user in $userList) {
@@ -27,7 +27,7 @@ foreach ($user in $userList) {
         }
         # Check if account last login is greater than 30 days, and continue processing
         if (($currentDate - $lastLogon).Days -gt 30) {
-            Write-Host "Profile is stale. Attempting Teams removal."
+            Write-Host "Profile is stale, or teams out of date . Attempting Teams removal."
             $WAPPPath = Join-Path $profilePath "AppData\Local\Microsoft\WindowsApps\ms-teams.exe"
             $appDatPath = Join-Path $profilePath "AppData\Roaming\Microsoft\Teams"
             $LocAppDatPath = Join-Path $profilePath "AppData\Local\Microsoft\Teams"
